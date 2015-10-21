@@ -43,9 +43,11 @@ static const char _base64EncodingTable[64] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh
     return [self initWithObjectData:data type:CAPSDataTypeJSON];
 }
 
+SuppressDesignatedInitializersWarning(
 - (instancetype)initWithDictionary:(NSDictionary *) dictionary {
     return [NSObject objectOfClass: [self class] fromJSON: dictionary];
 }
+)
 
 - (instancetype)initWithXMLData:(NSData *)data{
     return [self initWithObjectData:data type:CAPSDataTypeXML];
@@ -55,6 +57,7 @@ static const char _base64EncodingTable[64] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh
     return [self initWithObjectData:data type:CAPSDataTypeSOAP];
 }
 
+SuppressDesignatedInitializersWarning(
 - (instancetype)initWithObjectData:(NSData *)data type:(CAPSDataType)type {
     switch (type) {
         case CAPSDataTypeJSON:
@@ -71,6 +74,7 @@ static const char _base64EncodingTable[64] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh
             break;
     }
 }
+)
 
 + (NSArray *)arrayOfType:(Class)objectClass FromJSONData:(NSData *)data {
     return [NSObject objectOfClass:objectClass fromJSONData:data];
@@ -616,8 +620,8 @@ const char * property_getTypeString( objc_property_t property )
     return (NSMutableDictionary *)objc_getAssociatedObject(self, @"propertyArrayMap");
 }
 
-
 #pragma mark - Copy NSObject (initWithObject)
+SuppressDesignatedInitializersWarning(
 -(id)initWithObject:(NSObject *)oldObject error:(NSError * __autoreleasing *)error {
     NSString *oldClassName = [oldObject nameOfClass];
     NSString *newClassName = [self nameOfClass];
@@ -634,7 +638,7 @@ const char * property_getTypeString( objc_property_t property )
     
     return self;
 }
-
+)
 
 #pragma mark - Object to Data/String/etc.
 

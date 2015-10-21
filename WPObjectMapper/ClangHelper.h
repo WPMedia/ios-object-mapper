@@ -29,3 +29,11 @@
     Stuff; \
     _Pragma("clang diagnostic pop")
 #endif
+
+#ifndef SuppressDesignatedInitializersWarning
+#define SuppressDesignatedInitializersWarning(Stuff) \
+    _Pragma("clang diagnostic push") \
+    _Pragma("clang diagnostic ignored \"-Wobjc-designated-initializers\"") \
+    Stuff; \
+    _Pragma("clang diagnostic pop")
+#endif
