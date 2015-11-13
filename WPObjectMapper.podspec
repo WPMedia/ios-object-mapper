@@ -6,11 +6,11 @@ Pod::Spec.new do |s|
                    This was originally sourced from the NSObject-ObjectMap category. Used mostly in PostKit for ingestion of content.
                    DESC
 
-  s.homepage     = "https://github.com/WPMedia"
+  s.homepage     = "https://github.com/WPMedia/ios-object-mapper"
   s.license      = { :type => 'UA', :file => 'LICENSE' }
   s.author       = "The Washington Post"
   s.platform     = :ios, "7.0"
-  s.source       = { :git => "https://github.com/WPMedia/ios-object-mapper.git", :tag => s.version.to_s }
+  s.source       = { :git => "git@github.com:WPMedia/ios-object-mapper.git", :tag => s.version.to_s }
 
   s.source_files = 'WPObjectMapper'
 end
