@@ -1,0 +1,6 @@
+framework module MBFaker {
+  umbrella header "MBFaker-umbrella.h"
+
+  export *
+  module * { export * }
+}

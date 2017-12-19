@@ -30,11 +30,18 @@
 
 #import "NSObject+ObjectMap.h"
 #import "NSString+Inflections.h"
-#import "ClangHelper.h"
 
 static const long long EpochBase = 1000000000000;
 
 static const char _base64EncodingTable[64] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+
+
+@protocol NSObjectMappable
+@optional
++ (NSDictionary *) mapping;
++ (instancetype) objectWithDictionary: (NSDictionary *) dictionary;
+@end
+
 
 @implementation NSObject (ObjectMap)
 
@@ -43,11 +50,12 @@ static const char _base64EncodingTable[64] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh
     return [self initWithObjectData:data type:CAPSDataTypeJSON];
 }
 
-SuppressDesignatedInitializersWarning(
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wobjc-designated-initializers"
 - (instancetype)initWithDictionary:(NSDictionary *) dictionary {
     return [NSObject objectOfClass: [self class] fromJSON: dictionary];
 }
-)
+#pragma clang diagnostic pop
 
 - (instancetype)initWithXMLData:(NSData *)data{
     return [self initWithObjectData:data type:CAPSDataTypeXML];
@@ -57,7 +65,8 @@ SuppressDesignatedInitializersWarning(
     return [self initWithObjectData:data type:CAPSDataTypeSOAP];
 }
 
-SuppressDesignatedInitializersWarning(
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wobjc-designated-initializers"
 - (instancetype)initWithObjectData:(NSData *)data type:(CAPSDataType)type {
     switch (type) {
         case CAPSDataTypeJSON:
@@ -74,7 +83,7 @@ SuppressDesignatedInitializersWarning(
             break;
     }
 }
-)
+#pragma clang diagnostic pop
 
 + (NSArray *)arrayOfType:(Class)objectClass FromJSONData:(NSData *)data {
     return [NSObject objectOfClass:objectClass fromJSONData:data];
@@ -319,11 +328,9 @@ SuppressDesignatedInitializersWarning(
     NSDictionary *mapDictionary = [newObject propertyDictionary];
 
     NSDictionary *mapping;
-    SuppressPerformSelectorLeakWarning(
-      if ([[newObject class] respondsToSelector: NSSelectorFromString(@"mapping")]) {
-        mapping = [[newObject class] performSelector: NSSelectorFromString(@"mapping")];
-      }
-    );
+    if ([[newObject class] respondsToSelector: @selector(mapping)]) {
+        mapping = [[newObject class] performSelector: @selector(mapping)];
+    }
 
     for (NSString *key in [dict allKeys]) {
         NSString *propertyName = [mapDictionary objectForKey:key];
@@ -462,10 +469,8 @@ const char * property_getTypeString( objc_property_t property )
     Class klass = [NSClassFromString(propertyName) class];
   
     NSDictionary *mapping;
-    if ([klass respondsToSelector: NSSelectorFromString(@"mapping")]) {
-      SuppressPerformSelectorLeakWarning(
-        mapping = [klass performSelector: NSSelectorFromString(@"mapping")];
-      );
+    if ([klass respondsToSelector: @selector(mapping)]) {
+        mapping = [klass performSelector: @selector(mapping)];
     }
 
     // Create objects
@@ -479,10 +484,8 @@ const char * property_getTypeString( objc_property_t property )
             id nestedObj;
 
             // In some instances we want to use a special class method to instantiate the object, useful for class hierarchies
-            if ([klass respondsToSelector: NSSelectorFromString(@"objectWithDictionary:")]) {
-              SuppressPerformSelectorLeakWarning(
-                nestedObj = [klass performSelector: NSSelectorFromString(@"objectWithDictionary:") withObject: nestedArray[xx]];
-              );
+            if ([klass respondsToSelector: @selector(objectWithDictionary:)]) {
+              nestedObj = [klass performSelector: @selector(objectWithDictionary:) withObject: nestedArray[xx]];
               if (nestedObj)
                 [objectsArray addObject:nestedObj];
               continue;
@@ -621,7 +624,8 @@ const char * property_getTypeString( objc_property_t property )
 }
 
 #pragma mark - Copy NSObject (initWithObject)
-SuppressDesignatedInitializersWarning(
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wobjc-designated-initializers"
 -(id)initWithObject:(NSObject *)oldObject error:(NSError * __autoreleasing *)error {
     NSString *oldClassName = [oldObject nameOfClass];
     NSString *newClassName = [self nameOfClass];
@@ -638,7 +642,7 @@ SuppressDesignatedInitializersWarning(
     
     return self;
 }
-)
+#pragma clang diagnostic pop
 
 #pragma mark - Object to Data/String/etc.
 
