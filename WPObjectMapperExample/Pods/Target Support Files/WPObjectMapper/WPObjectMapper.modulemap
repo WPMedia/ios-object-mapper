@@ -1,6 +1,0 @@
-framework module WPObjectMapper {
-  umbrella header "WPObjectMapper-umbrella.h"
-
-  export *
-  module * { export * }
-}
