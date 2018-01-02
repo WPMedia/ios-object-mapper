@@ -1,0 +1,9 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/MBFaker" "$PODS_CONFIGURATION_BUILD_DIR/WPFaker" "$PODS_CONFIGURATION_BUILD_DIR/WPObjectMapper"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/MBFaker/MBFaker.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/WPFaker/WPFaker.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/WPObjectMapper/WPObjectMapper.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "MBFaker" -framework "WPFaker" -framework "WPObjectMapper"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods

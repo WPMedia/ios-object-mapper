@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_WPObjectMapperExample_WPObjectMapperExampleTests : NSObject
+@end
+@implementation PodsDummy_Pods_WPObjectMapperExample_WPObjectMapperExampleTests
+@end
