@@ -293,6 +293,7 @@ static const char _base64EncodingTable[64] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh
 
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setCalendar:[NSCalendar calendarWithIdentifier: NSCalendarIdentifierGregorian]];
+    [formatter setLocale: [NSLocale localeWithLocaleIdentifier: @"en_US_POSIX"]];
     [formatter setDateFormat:TwitterDateFormat];
     NSDate *date = [formatter dateFromString: dateStr];
     if (date) {
