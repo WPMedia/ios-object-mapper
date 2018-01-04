@@ -14,11 +14,6 @@
 @implementation SingleObject
 
 +(SingleObject *)newSingleObject{
-//    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-//    [formatter setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
-//    [formatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss.SSS"];
-//    
-//    NSDate *currentDate = [NSDate date];
     RandomNumber *random = [[RandomNumber alloc] init];
 
     //Create object to be serialized

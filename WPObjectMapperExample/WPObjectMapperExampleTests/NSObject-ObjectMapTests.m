@@ -139,6 +139,7 @@
 
 - (void) testDateFormats {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setCalendar:[NSCalendar calendarWithIdentifier: NSCalendarIdentifierGregorian]];
     [formatter setTimeZone:[NSTimeZone timeZoneWithAbbreviation: OMTimeZone]];
 
     [@[OMDateFormat, TwitterDateFormat, WaPoDateFormat] enumerateObjectsUsingBlock:^(NSString *dateFormat, NSUInteger idx, BOOL *stop) {

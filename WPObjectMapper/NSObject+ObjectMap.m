@@ -285,28 +285,32 @@ static const char _base64EncodingTable[64] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh
         return [NSDate dateWithTimeIntervalSince1970: epoch.doubleValue];
     }
 
-    if (![dateValue isKindOfClass: [NSString class]])
+    if (![dateValue isKindOfClass: [NSString class]]) {
         return nil;
+    }
 
     NSString *dateStr = (NSString *)dateValue;
 
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:OMDateFormat];
-    [formatter setTimeZone:[NSTimeZone timeZoneWithAbbreviation:OMTimeZone]];
-    NSDate *date = [formatter dateFromString: (NSString *)dateValue];
-    if (date)
+    [formatter setCalendar:[NSCalendar calendarWithIdentifier: NSCalendarIdentifierGregorian]];
+    [formatter setDateFormat:TwitterDateFormat];
+    NSDate *date = [formatter dateFromString: dateStr];
+    if (date) {
         return date;
+    }
 
-    formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:WaPoDateFormat];
     date = [formatter dateFromString: dateStr];
-    if (date)
+    if (date) {
         return date;
+    }
 
-    [formatter setDateFormat: TwitterDateFormat];
+    [formatter setTimeZone:[NSTimeZone timeZoneWithAbbreviation:OMTimeZone]];
+    [formatter setDateFormat:OMDateFormat];
     date = [formatter dateFromString: dateStr];
-    if (date)
+    if (date) {
         return date;
+    }
 
     NSRegularExpression *millisecondsRegex = [NSRegularExpression regularExpressionWithPattern: @"\\d{13}" options: 0 error: nil];
     if ([millisecondsRegex firstMatchInString: dateStr options: 0 range: NSMakeRange(0, dateStr.length)]) {
