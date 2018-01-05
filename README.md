@@ -18,10 +18,6 @@ Also included with this pod are the following libraries.
 
 Underscore, camel-case or classify a string.
 
-### ClangHelper.h
-
-Useful `#define` statements for avoiding compiler warnings which may not be valid.
-
 ### NSObject+AutoDescription
 
 Automatically describe an object’s properties and types. To use it, import the file and override the default `description` method.
