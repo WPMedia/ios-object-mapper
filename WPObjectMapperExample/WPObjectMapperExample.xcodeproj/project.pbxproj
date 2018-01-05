@@ -19,7 +19,6 @@
 		8D89945C1B3D8A9400C3D822 /* SingleObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D8994541B3D8A9400C3D822 /* SingleObject.m */; };
 		8D8994611B3D8AA300C3D822 /* XCTestCase+ObjectMapTestCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D89945F1B3D8AA300C3D822 /* XCTestCase+ObjectMapTestCategory.m */; };
 		8DE520FC1B3DA7A1006B117D /* NSObject-AutoDescriptionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE520FB1B3DA7A1006B117D /* NSObject-AutoDescriptionTests.m */; };
-		A130BA35C9837B0107C9D2A0 /* Pods_WPObjectMapperExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C892374130616B2B4FCE146 /* Pods_WPObjectMapperExampleTests.framework */; };
 		D80384D31B3C5C7300EF9A19 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D80384D21B3C5C7300EF9A19 /* main.m */; };
 		D80384D61B3C5C7300EF9A19 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D80384D51B3C5C7300EF9A19 /* AppDelegate.m */; };
 		D80384D91B3C5C7300EF9A19 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D80384D81B3C5C7300EF9A19 /* MasterViewController.m */; };
@@ -42,10 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1C892374130616B2B4FCE146 /* Pods_WPObjectMapperExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WPObjectMapperExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28A0093EB7464DD86A9A8A15 /* Pods-WPObjectMapperExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WPObjectMapperExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-WPObjectMapperExample/Pods-WPObjectMapperExample.release.xcconfig"; sourceTree = "<group>"; };
-		39F3D18D1D60793CAAFA806E /* Pods-WPObjectMapperExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WPObjectMapperExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WPObjectMapperExampleTests/Pods-WPObjectMapperExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
-		4D86CB33026F269E1ADB808E /* Pods-WPObjectMapperExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WPObjectMapperExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WPObjectMapperExampleTests/Pods-WPObjectMapperExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		6FD8E679C35669F43729C610 /* Pods_WPObjectMapperExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WPObjectMapperExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D8994471B3D7FF800C3D822 /* NSString+Inflections.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Inflections.h"; sourceTree = "<group>"; };
 		8D8994481B3D7FF800C3D822 /* NSString+Inflections.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Inflections.m"; sourceTree = "<group>"; };
@@ -99,7 +95,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A130BA35C9837B0107C9D2A0 /* Pods_WPObjectMapperExampleTests.framework in Frameworks */,
 				8964C4B9244095CBD281FB9A /* Pods_WPObjectMapperExample_WPObjectMapperExampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,8 +105,6 @@
 		6B3D8D419918C55B425C878F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				39F3D18D1D60793CAAFA806E /* Pods-WPObjectMapperExampleTests.debug.xcconfig */,
-				4D86CB33026F269E1ADB808E /* Pods-WPObjectMapperExampleTests.release.xcconfig */,
 				EF680E950CF1495464EA3B55 /* Pods-WPObjectMapperExample.debug.xcconfig */,
 				28A0093EB7464DD86A9A8A15 /* Pods-WPObjectMapperExample.release.xcconfig */,
 				A5138F6BBF4525CEB45DEF14 /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests.debug.xcconfig */,
@@ -138,7 +131,6 @@
 		B46FDF22449A613EE3C79BE5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1C892374130616B2B4FCE146 /* Pods_WPObjectMapperExampleTests.framework */,
 				6FD8E679C35669F43729C610 /* Pods_WPObjectMapperExample.framework */,
 				9A93407CB4990749F1F2E38C /* Pods_WPObjectMapperExample_WPObjectMapperExampleTests.framework */,
 			);
