@@ -563,7 +563,8 @@ const char * property_getTypeString( objc_property_t property )
             }
             
             // Finally add that object
-            [objectsArray addObject:nestedObj];
+            if (nestedObj)
+                [objectsArray addObject:nestedObj];
         }
 
         // Should never reach here due to the continue statement near the top of the for loop. Leaving for historical purposes in case we need to re-implement.
