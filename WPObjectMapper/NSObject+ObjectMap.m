@@ -39,9 +39,10 @@ static const char _base64EncodingTable[64] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh
 @protocol NSObjectMappable
 @optional
 + (NSDictionary *) mapping;
-+ (instancetype) objectWithDictionary: (NSDictionary *) dictionary;
++ (nullable instancetype) objectWithDictionary: (NSDictionary *) dictionary;
 @end
 
+NS_ASSUME_NONNULL_BEGIN
 
 @implementation NSObject (ObjectMap)
 
@@ -440,8 +441,8 @@ static const char _base64EncodingTable[64] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh
     return @"";
 }
 
-const char * property_getTypeString( objc_property_t property );
-const char * property_getTypeString( objc_property_t property )
+const char * _Nullable  property_getTypeString( objc_property_t property );
+const char * _Nullable  property_getTypeString( objc_property_t property )
 {
   const char * attrs = property_getAttributes( property );
   if ( attrs == NULL )
@@ -893,7 +894,7 @@ const char * property_getTypeString( objc_property_t property )
 
 #pragma mark - XMLString for Self (The Meat of the Operation)
 // Doesn't include <xml> or <soap> cruft - just the inside material
-- (NSString *)xmlStringForSelfNamed:(NSString *)name {
+- (NSString *)xmlStringForSelfNamed:(nullable NSString *)name {
     // XML doesn't handle NSDictionaries (to SPEC)
     if ([self isKindOfClass:[NSDictionary class]]) {
         return @"";
@@ -1101,6 +1102,7 @@ const char * property_getTypeString( objc_property_t property )
 
 @end
 
+NS_ASSUME_NONNULL_END
 
 @implementation SOAPObject
 
