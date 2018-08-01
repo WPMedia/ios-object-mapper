@@ -50,7 +50,7 @@ typedef NS_ENUM(NSInteger, CAPSDataType) {
 
 //  Universal Method
 -(NSDictionary *)propertyDictionary;
--(NSString *)nameOfClass;
+-(nullable NSString *)nameOfClass;
 
 
 #pragma mark - Init Methods
@@ -61,7 +61,7 @@ typedef NS_ENUM(NSInteger, CAPSDataType) {
  
  @return The newly-initialized object.
  */
-- (instancetype)initWithJSONData:(NSData *)data;
+- (nullable instancetype)initWithJSONData:(NSData *)data;
 
 
 /**
@@ -71,7 +71,7 @@ typedef NS_ENUM(NSInteger, CAPSDataType) {
  
  @return The newly-initialized object.
  */
-- (instancetype)initWithXMLData:(NSData *)data;
+- (nullable instancetype)initWithXMLData:(NSData *)data;
 
 
 /**
@@ -81,7 +81,7 @@ typedef NS_ENUM(NSInteger, CAPSDataType) {
  
  @return The newly-initialized object.
  */
-- (instancetype)initWithSOAPData:(NSData *)data;
+- (nullable instancetype)initWithSOAPData:(NSData *)data;
 
 
 /**
@@ -92,9 +92,9 @@ typedef NS_ENUM(NSInteger, CAPSDataType) {
  
  @return The newly-initialized object.
  */
-- (instancetype)initWithObjectData:(NSData *)data type:(CAPSDataType)type;
+- (nullable instancetype)initWithObjectData:(NSData *)data type:(CAPSDataType)type;
 
-- (instancetype)initWithDictionary:(NSDictionary *) dictionary;
+- (nullable instancetype)initWithDictionary:(NSDictionary *) dictionary;
 
 
 #pragma mark - Top Level Array from JSON
@@ -106,25 +106,25 @@ typedef NS_ENUM(NSInteger, CAPSDataType) {
  
  @return The newly-initialized array.
  */
-+ (NSArray *)arrayOfType:(Class)objectClass FromJSONData:(NSData *)data;
++ (nullable NSArray *)arrayOfType:(Class)objectClass FromJSONData:(NSData *)data;
 
 
 
 #pragma mark - Serialized Data/Strings from Objects
--(NSData *)JSONData;
--(NSString *)JSONString;
--(NSData *)XMLData;
+-(nullable NSData *)JSONData;
+-(nullable NSString *)JSONString;
+-(nullable NSData *)XMLData;
 -(NSString *)XMLString;
--(NSData *)SOAPData;
+-(nullable NSData *)SOAPData;
 -(NSString *)SOAPString;
 -(NSDictionary *)objectDictionary;
 
 
 #pragma mark - New Object with properties of another Object
--(id)initWithObject:(NSObject *)oldObject error:(NSError **)error;
+-(nullable id)initWithObject:(NSObject *)oldObject error:(NSError **)error;
 
 #pragma mark - Base64 Encode/Decode
-+(NSString *)encodeBase64WithData:(NSData *)objData;
++(nullable NSString *)encodeBase64WithData:(NSData *)objData;
 +(NSData *)base64DataFromString:(NSString *)string;
 
 @end
