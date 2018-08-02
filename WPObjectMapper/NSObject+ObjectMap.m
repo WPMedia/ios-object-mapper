@@ -39,35 +39,36 @@ static const char _base64EncodingTable[64] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh
 @protocol NSObjectMappable
 @optional
 + (NSDictionary *) mapping;
-+ (instancetype) objectWithDictionary: (NSDictionary *) dictionary;
++ (nullable instancetype) objectWithDictionary: (NSDictionary *) dictionary;
 @end
 
+NS_ASSUME_NONNULL_BEGIN
 
 @implementation NSObject (ObjectMap)
 
 #pragma mark - Init Methods
-- (instancetype)initWithJSONData:(NSData *)data{
+- (nullable instancetype)initWithJSONData:(NSData *)data{
     return [self initWithObjectData:data type:CAPSDataTypeJSON];
 }
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wobjc-designated-initializers"
-- (instancetype)initWithDictionary:(NSDictionary *) dictionary {
+- (nullable instancetype)initWithDictionary:(NSDictionary *) dictionary {
     return [NSObject objectOfClass: [self class] fromJSON: dictionary];
 }
 #pragma clang diagnostic pop
 
-- (instancetype)initWithXMLData:(NSData *)data{
+- (nullable instancetype)initWithXMLData:(NSData *)data{
     return [self initWithObjectData:data type:CAPSDataTypeXML];
 }
 
-- (instancetype)initWithSOAPData:(NSData *)data{
+- (nullable instancetype)initWithSOAPData:(NSData *)data{
     return [self initWithObjectData:data type:CAPSDataTypeSOAP];
 }
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wobjc-designated-initializers"
-- (instancetype)initWithObjectData:(NSData *)data type:(CAPSDataType)type {
+- (nullable instancetype)initWithObjectData:(NSData *)data type:(CAPSDataType)type {
     switch (type) {
         case CAPSDataTypeJSON:
             return [NSObject objectOfClass:[self class] fromJSONData:data];
@@ -85,13 +86,13 @@ static const char _base64EncodingTable[64] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh
 }
 #pragma clang diagnostic pop
 
-+ (NSArray *)arrayOfType:(Class)objectClass FromJSONData:(NSData *)data {
++ (nullable NSArray *)arrayOfType:(Class)objectClass FromJSONData:(NSData *)data {
     return [NSObject objectOfClass:objectClass fromJSONData:data];
 }
 
 
 #pragma mark - XML to Object
-+(id)objectOfClass:(Class)objectClass fromXML:(NSString *)xml {
++(nullable id)objectOfClass:(Class)objectClass fromXML:(NSString *)xml {
     //Create new instance of desired object
     id newObject = [[objectClass alloc] init];
     
@@ -140,7 +141,7 @@ static const char _base64EncodingTable[64] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh
     return newObject;
 }
 
--(id)getNodeValue:(NSString *)node fromXML:(NSString *)xml {
+-(nullable id)getNodeValue:(NSString *)node fromXML:(NSString *)xml {
     NSString *trash = @"";
     NSString *value = nil;
     NSScanner *xmlScanner = [NSScanner scannerWithString:xml];
@@ -252,7 +253,7 @@ static const char _base64EncodingTable[64] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh
 
 
 #pragma mark - JSONData to Object
-+ (id)objectOfClass:(Class)objectClass fromJSONData:(NSData *)jsonData {
++ (nullable id)objectOfClass:(Class)objectClass fromJSONData:(NSData *)jsonData {
     NSError *error;
     id newObject = nil;
     id jsonObject = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingAllowFragments error:&error];
@@ -275,7 +276,7 @@ static const char _base64EncodingTable[64] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh
 }
 
 // TODO: Switch out to use NSObject-DateFormat
-+ (NSDate *) parseDate:(id) dateValue {
++ (nullable NSDate *) parseDate:(id) dateValue {
     if ([dateValue isKindOfClass: [NSNumber class]]) {
         NSNumber *epoch = (NSNumber *)dateValue;
         if (epoch.longLongValue > EpochBase) {
@@ -324,7 +325,7 @@ static const char _base64EncodingTable[64] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh
 
 #pragma mark - Dictionary to Object
 
-+(id)objectOfClass:(Class)objectClass fromJSON:(NSDictionary *)dict {
++(nullable id)objectOfClass:(Class)objectClass fromJSON:(NSDictionary *)dict {
     if([NSStringFromClass(objectClass) isEqualToString:@"NSDictionary"]){
         return dict;
     }
@@ -408,7 +409,7 @@ static const char _base64EncodingTable[64] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh
     return newObject;
 }
 
--(NSString *)classOfPropertyNamed:(NSString *)propName {
+-(nullable NSString *)classOfPropertyNamed:(NSString *)propName {
     objc_property_t theProperty = class_getProperty([self class], [propName UTF8String]);
 
     const char *attributes = property_getAttributes(theProperty);
@@ -440,8 +441,8 @@ static const char _base64EncodingTable[64] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh
     return @"";
 }
 
-const char * property_getTypeString( objc_property_t property );
-const char * property_getTypeString( objc_property_t property )
+const char * _Nullable  property_getTypeString( objc_property_t property );
+const char * _Nullable  property_getTypeString( objc_property_t property )
 {
   const char * attrs = property_getAttributes( property );
   if ( attrs == NULL )
@@ -464,7 +465,7 @@ const char * property_getTypeString( objc_property_t property )
     return [NSObject arrayMapFromArray:jsonArray forPropertyName:obj];
 }
 
--(NSString *)nameOfClass {
+-(nullable NSString *)nameOfClass {
     return [NSString stringWithUTF8String:class_getName([self class])];
 }
 
@@ -605,7 +606,7 @@ const char * property_getTypeString( objc_property_t property )
     return dict;
 }
 
--(NSString *)typeFromProperty:(objc_property_t)property {
+-(nullable NSString *)typeFromProperty:(objc_property_t)property {
     return [[NSString stringWithUTF8String:property_getAttributes(property)] componentsSeparatedByString:@","][0];
 }
 
@@ -631,7 +632,7 @@ const char * property_getTypeString( objc_property_t property )
 #pragma mark - Copy NSObject (initWithObject)
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wobjc-designated-initializers"
--(id)initWithObject:(NSObject *)oldObject error:(NSError * __autoreleasing *)error {
+-(nullable id)initWithObject:(NSObject *)oldObject error:(NSError * __autoreleasing *)error {
     NSString *oldClassName = [oldObject nameOfClass];
     NSString *newClassName = [self nameOfClass];
 
@@ -659,18 +660,18 @@ const char * property_getTypeString( objc_property_t property )
     return objectDict;
 }
 
--(NSData *)JSONData{
+-(nullable NSData *)JSONData{
     id dict = [NSObject jsonDataObjects:self];
     return [NSJSONSerialization dataWithJSONObject:dict options:NSJSONWritingPrettyPrinted error:nil];
 }
 
--(NSString *)JSONString{
+-(nullable NSString *)JSONString{
     id dict = [NSObject jsonDataObjects:self];
     NSData *JSONData = [NSJSONSerialization dataWithJSONObject:dict options:NSJSONWritingPrettyPrinted error:nil];
     return [[NSString alloc] initWithData:JSONData encoding:NSUTF8StringEncoding];
 }
 
-+ (id)jsonDataObjects:(id)obj {
++ (nullable id)jsonDataObjects:(id)obj {
     id returnProperties = nil;
     if([self isArray:obj]) {
         NSInteger length =[(NSArray*)obj count];
@@ -834,11 +835,11 @@ const char * property_getTypeString( objc_property_t property )
 
 #pragma mark - SOAP/XML Serialization
 
--(NSData *)SOAPData{
+-(nullable NSData *)SOAPData{
     return [[self SOAPString] dataUsingEncoding:NSUTF8StringEncoding];
 }
 
--(NSData *)XMLData{
+-(nullable NSData *)XMLData{
     return [[self XMLString] dataUsingEncoding:NSUTF8StringEncoding];
 }
 
@@ -893,7 +894,7 @@ const char * property_getTypeString( objc_property_t property )
 
 #pragma mark - XMLString for Self (The Meat of the Operation)
 // Doesn't include <xml> or <soap> cruft - just the inside material
-- (NSString *)xmlStringForSelfNamed:(NSString *)name {
+- (NSString *)xmlStringForSelfNamed:(nullable NSString *)name {
     // XML doesn't handle NSDictionaries (to SPEC)
     if ([self isKindOfClass:[NSDictionary class]]) {
         return @"";
@@ -1050,7 +1051,7 @@ const char * property_getTypeString( objc_property_t property )
     return theData;
 }
 
-+ (NSString *)encodeBase64WithData:(NSData *)objData {
++ (nullable NSString *)encodeBase64WithData:(NSData *)objData {
     const unsigned char * objRawData = [objData bytes];
     char * objPointer;
     char * strResult;
@@ -1101,6 +1102,7 @@ const char * property_getTypeString( objc_property_t property )
 
 @end
 
+NS_ASSUME_NONNULL_END
 
 @implementation SOAPObject
 
