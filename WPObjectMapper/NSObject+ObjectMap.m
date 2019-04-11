@@ -54,7 +54,10 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wobjc-designated-initializers"
 - (nullable instancetype)initWithDictionary:(NSDictionary *) dictionary {
-    return [NSObject objectOfClass: [self class] fromJSON: dictionary];
+    if (self = [self init]) {
+        [NSObject object: self fromJSON: dictionary];
+    }
+    return self;
 }
 #pragma clang diagnostic pop
 
@@ -330,7 +333,10 @@ NS_ASSUME_NONNULL_BEGIN
         return dict;
     }
 
-    id newObject = [[objectClass alloc] init];
+    return [[objectClass alloc] initWithDictionary:dict];
+}
+
++(nullable id)object:(id)newObject fromJSON:(NSDictionary *)dict {
     NSDictionary *mapDictionary = [newObject propertyDictionary];
 
     NSDictionary *mapping;
@@ -491,7 +497,7 @@ const char * _Nullable  property_getTypeString( objc_property_t property )
 
             // In some instances we want to use a special class method to instantiate the object, useful for class hierarchies
             if ([klass respondsToSelector: @selector(objectWithDictionary:)]) {
-              nestedObj = [klass performSelector: @selector(objectWithDictionary:) withObject: nestedArray[xx]];
+              nestedObj = [klass objectWithDictionary: nestedArray[xx]];
               if (nestedObj)
                 [objectsArray addObject:nestedObj];
               continue;
