@@ -29,68 +29,76 @@
     // Test for one's nilness and the other's non-nilness
     if ((testObj == nil && deserializedObj != nil) || (testObj != nil && deserializedObj == nil)) {
         return NO;
+    } else if (testObj == nil && deserializedObj == nil) {
+        return YES;
     }
-    
+
+    // Test for simple types, arrays, and dictionaries
+    if ([testObj isKindOfClass:[NSNumber class]]) {
+        return [testObj isEqualToNumber:deserializedObj];
+    } else if ([testObj isKindOfClass:[NSString class]]) {
+        return [testObj isEqualToString:deserializedObj];
+    } else if ([testObj isKindOfClass:[NSDate class]]) {
+        NSTimeInterval one = [testObj timeIntervalSince1970];
+        NSTimeInterval two = [deserializedObj timeIntervalSince1970];
+        return ((NSInteger) one) == ((NSInteger) two);
+    } else if ([testObj isKindOfClass:[NSArray class]]) {
+        if ([testObj count] != [deserializedObj count]) {
+            return NO;
+        }
+        for (NSUInteger i = 0; i < [testObj count]; i++) {
+            id indexedTestObj = [testObj objectAtIndex: i];
+            id indexedDeserializedObj = [deserializedObj objectAtIndex: i];
+            if (![self testObject:indexedTestObj isEqualToDeserializedObject:indexedDeserializedObj forType:type]) {
+                return NO;
+            }
+        }
+        return YES;
+    } else if ([testObj isKindOfClass:[NSDictionary class]]) {
+        NSSet *keys = [NSSet setWithArray: [testObj allKeys]];
+        if (![keys isEqualToSet: [NSSet setWithArray: [deserializedObj allKeys]]]) {
+            return NO;
+        }
+        for (id key in keys) {
+            id keyedTestObj = [testObj objectForKey: key];
+            id keyedDeserializedObj = [deserializedObj objectForKey: key];
+            if (![self testObject:keyedTestObj isEqualToDeserializedObject:keyedDeserializedObj forType:type]) {
+                return NO;
+            }
+        }
+        return YES;
+    }
+
     //Test all properties
     for (NSString *propertyName in [deserializedObj propertyDictionary]) {
-        BOOL isEqual = NO;
+        // SingleObject does not implement `hash`
+        if ([propertyName isEqualToString: @"hash"]) {
+            continue;
+        }
 
         if ([propertyName isEqualToString: @"count"]) {
             continue;
         }
 
-        //Get instance of property
-        id testPropertyInstance;
+        // Get instance of property
+        id testValue;
         @try {
-            testPropertyInstance = [testObj valueForKey:propertyName];
+            testValue = [testObj valueForKey:propertyName];
         } @catch (NSException *exception) {
             continue; // not a thing
         }
-        id deserializedPropertyInstance = [deserializedObj valueForKey:propertyName];
+        id deserializedValue = [deserializedObj valueForKey:propertyName];
 
-        // Test property equality
-        if ([deserializedPropertyInstance isKindOfClass:[NSDate class]]) {
-            if (deserializedPropertyInstance && testPropertyInstance) {
-                int date1TimeInt = [[testObj valueForKey:propertyName] timeIntervalSince1970];
-                int date2TimeInt = [[deserializedObj valueForKey:propertyName] timeIntervalSince1970];
-                isEqual = date1TimeInt-date2TimeInt == 0;
-            }
-        }
-        else if ([deserializedPropertyInstance isKindOfClass:[NSString class]]) {
-            isEqual = [(NSString *)[testObj valueForKey:propertyName] isEqualToString:(NSString *)[deserializedObj valueForKey:propertyName]];
-        }
-        else if ([deserializedPropertyInstance isKindOfClass:[NSNumber class]]){
-            isEqual = [(NSNumber *)[testObj valueForKey:propertyName] isEqualToNumber:(NSNumber *)[deserializedObj valueForKey:propertyName]];
-        }
-        else if ([deserializedPropertyInstance isKindOfClass:[NSArray class]]) {
-            // Create block BOOL
-            __block BOOL isEqualBlock;
-            
-            //Iterate over all objects and test them!
-            [deserializedPropertyInstance enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-                isEqualBlock = [self testObject:[(NSArray *)testPropertyInstance objectAtIndex:idx] isEqualToDeserializedObject:[(NSArray *)deserializedPropertyInstance objectAtIndex:idx] forType:type];
-                *stop = !isEqualBlock;
-            }];
-            
-            // Finally set isEqual
-            isEqual = isEqualBlock;
-        }
-        else if ([testPropertyInstance isKindOfClass:[NSDictionary class]] && (type == CAPSDataTypeXML || type == CAPSDataTypeSOAP)) {
+        if ([testValue isKindOfClass:[NSDictionary class]] && (type == CAPSDataTypeXML || type == CAPSDataTypeSOAP)) {
             // XML/SOAP doesn't have the concept of Dictionary - everything is an object, an array, or a type of some sort
-            isEqual = YES;
             continue;
         }
-        else {
-            //It's a complex object of some kind
-            isEqual = [self testObject:[testObj valueForKey:propertyName] isEqualToDeserializedObject:deserializedPropertyInstance forType:type];
-        }
-        
-        // Return NO if the property is not equal
-        if (isEqual == NO) {
+
+        if (![self testObject:testValue isEqualToDeserializedObject:deserializedValue forType:type]) {
             return NO;
         }
     }
-    
+
     return YES;
 }
 

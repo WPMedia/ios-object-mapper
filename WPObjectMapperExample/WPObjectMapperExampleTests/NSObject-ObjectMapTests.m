@@ -108,7 +108,7 @@
 - (void)testExtraPropertiesInNestedArray {
     // Create serializaed/deserialized Objects
     SingleObject *testSingleObject = [SingleObject newSingleObject];
-    NSArray *extraPropertiesArray = @[[SingleObject newSingleObject],[SingleObject newSingleObject],[SingleObject newSingleObject]];
+    NSArray *extraPropertiesArray = @[testSingleObject,testSingleObject,testSingleObject];
     NSString *jsonArray = [NSString stringWithFormat:@"[%@,%@,%@]", [testSingleObject jsonStringWithExtraParameters], [testSingleObject jsonStringWithExtraParameters], [testSingleObject jsonStringWithExtraParameters]];
     NSArray *deserializedExtraPropertiesArray = [NSObject arrayOfType:[SingleObject class] FromJSONData:[jsonArray dataUsingEncoding:NSUTF8StringEncoding]];
 
