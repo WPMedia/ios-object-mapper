@@ -232,7 +232,6 @@
 				D80384CA1B3C5C7300EF9A19 /* Frameworks */,
 				D80384CB1B3C5C7300EF9A19 /* Resources */,
 				0050975D21C0BDDF3719EFB0 /* [CP] Embed Pods Frameworks */,
-				CC29FC0A8D6C6B329B288A8C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -252,7 +251,6 @@
 				D80384E61B3C5C7300EF9A19 /* Frameworks */,
 				D80384E71B3C5C7300EF9A19 /* Resources */,
 				CEE866F43A536699E60D8A2F /* [CP] Embed Pods Frameworks */,
-				053028142F849AFD5B7C8522 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -328,7 +326,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-WPObjectMapperExample/Pods-WPObjectMapperExample-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-WPObjectMapperExample/Pods-WPObjectMapperExample-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/MBFaker/MBFaker.framework",
 				"${BUILT_PRODUCTS_DIR}/WPFaker/WPFaker.framework",
 				"${BUILT_PRODUCTS_DIR}/WPObjectMapper/WPObjectMapper.framework",
@@ -341,31 +339,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WPObjectMapperExample/Pods-WPObjectMapperExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		053028142F849AFD5B7C8522 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-WPObjectMapperExampleTests/Pods-WPObjectMapperExampleTests-resources.sh",
-				"${PODS_ROOT}/MBFaker/MBFaker/Locales/cs.yml",
-				"${PODS_ROOT}/MBFaker/MBFaker/Locales/de.yml",
-				"${PODS_ROOT}/MBFaker/MBFaker/Locales/en.yml",
-				"${PODS_ROOT}/MBFaker/MBFaker/Locales/fr.yml",
-				"${PODS_ROOT}/MBFaker/MBFaker/Locales/nl.yml",
-				"${PODS_ROOT}/MBFaker/MBFaker/Locales/pl.yml",
-				"${PODS_ROOT}/MBFaker/MBFaker/Locales/ru.yml",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WPObjectMapperExample-WPObjectMapperExampleTests/Pods-WPObjectMapperExample-WPObjectMapperExampleTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WPObjectMapperExample/Pods-WPObjectMapperExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2F1C07E1998FF6BD0B6A1CC2 /* [CP] Check Pods Manifest.lock */ = {
@@ -404,28 +378,13 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CC29FC0A8D6C6B329B288A8C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WPObjectMapperExample/Pods-WPObjectMapperExample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		CEE866F43A536699E60D8A2F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-WPObjectMapperExample-WPObjectMapperExampleTests/Pods-WPObjectMapperExample-WPObjectMapperExampleTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-WPObjectMapperExample-WPObjectMapperExampleTests/Pods-WPObjectMapperExample-WPObjectMapperExampleTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/MBFaker/MBFaker.framework",
 				"${BUILT_PRODUCTS_DIR}/WPFaker/WPFaker.framework",
 				"${BUILT_PRODUCTS_DIR}/WPObjectMapper/WPObjectMapper.framework",
@@ -438,7 +397,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WPObjectMapperExample-WPObjectMapperExampleTests/Pods-WPObjectMapperExample-WPObjectMapperExampleTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WPObjectMapperExample-WPObjectMapperExampleTests/Pods-WPObjectMapperExample-WPObjectMapperExampleTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

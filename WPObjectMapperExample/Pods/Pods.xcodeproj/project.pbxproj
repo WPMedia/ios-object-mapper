@@ -7,502 +7,512 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10F087FBA441B9010246CA5251281C8A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BD4961CD0ED74DFC496F7EEEBBC64CB /* Foundation.framework */; };
-		135FCC1FC3E9AFB2B17ED90DAB58A0B8 /* MBFaker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E9479263C40E38399D11BB37EB0A8405 /* MBFaker-dummy.m */; };
-		14AADCDC5AD2A40D3709B8F8FC75AAB3 /* MBFakerInternet.h in Headers */ = {isa = PBXBuildFile; fileRef = 100D678890528002541423E2C06E6B0E /* MBFakerInternet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		14E839E25DE326161186BD6A52A43B23 /* MBFakerCompany.h in Headers */ = {isa = PBXBuildFile; fileRef = A2B7EB01D3A2469A48E09E15785921CD /* MBFakerCompany.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1AA1C52A8BD56A6105F9B5DDFBC8A05B /* dumper.c in Sources */ = {isa = PBXBuildFile; fileRef = 164228282B6317780A009982DC739DFF /* dumper.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		1C35F6D954332391B2B06A2709540E7E /* MBFakerHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 3567D9588706A1B6562E66F5088F59A8 /* MBFakerHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		24F40A8AD8D035FAB45F141078887CB9 /* MBFaker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AA44790AA5B31E09A93BDA5C58A5701 /* MBFaker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		252A9D27EC0DC2502E6AB418C6318432 /* loader.c in Sources */ = {isa = PBXBuildFile; fileRef = 40D172F6F45D8ED344C10A8C96DA5A9D /* loader.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		28B48DAFA520E4F4B5FB891BF859A20A /* yaml_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 1925AB5F8F30ED07AC1280F0CE7A7DE4 /* yaml_private.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2986534C7CEB74E920560DD03F02BCFE /* NSObject+AutoDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = E30F619D385423D558DF83971E6EB02C /* NSObject+AutoDescription.m */; };
-		393B559078280FE53874F0ED657184C3 /* nl.yml in Resources */ = {isa = PBXBuildFile; fileRef = B098276869AF1FBD887C3D7D127AC467 /* nl.yml */; };
-		3D2925B5A7485494DD1A819F61CC6F76 /* ru.yml in Resources */ = {isa = PBXBuildFile; fileRef = 168FE9E2FBEC1C861DC5C66399E04F1F /* ru.yml */; };
-		41A3BA822B4567DD2BEA9F25142A59AE /* pl.yml in Resources */ = {isa = PBXBuildFile; fileRef = FF66A6040744C2A85C20530162B1D969 /* pl.yml */; };
-		43A527C6D6329727B634175E0B158E04 /* de.yml in Resources */ = {isa = PBXBuildFile; fileRef = 9B336438F2387FE8D39A3CDF1D570EC6 /* de.yml */; };
-		46EBB7F6EB993F67C3BF396CD8019311 /* WPFaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DF0F76BD90A00AFDFB953678832BD9 /* WPFaker.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		4A7CA453B14FFEC9D32D92D0D66A0A0F /* en.yml in Resources */ = {isa = PBXBuildFile; fileRef = 2C73F2F1AEB44EB235645326EC8349E6 /* en.yml */; };
-		4ADDED93AB6249080157AB0BBF9B49EC /* MBFakerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FB47F30E7286004444F21F31EBE7CC78 /* MBFakerHelper.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		4C6585CFF5EA2720C1C0B49E94F58792 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BD4961CD0ED74DFC496F7EEEBBC64CB /* Foundation.framework */; };
-		5230CDE9E66E61187BDB4E89A614D9C4 /* MBFaker.h in Headers */ = {isa = PBXBuildFile; fileRef = B3906F4ED1BDE3188779BD0C535F380F /* MBFaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		54CA1A92FC98B580E12D457A594F75B9 /* cs.yml in Resources */ = {isa = PBXBuildFile; fileRef = 6CF0E90D678ABD4A10F76B892085A360 /* cs.yml */; };
-		5ED8206019DDDB4CFE137AC3D1DB3B77 /* scanner.c in Sources */ = {isa = PBXBuildFile; fileRef = 2DB0D516F9AD9DF77403277A5A05E5DC /* scanner.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		5FB4CE040DD41D84EF4251295F6D0C5E /* NSString+Inflections.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD8F27A687E0F3D84037D4AE4619AB0 /* NSString+Inflections.m */; };
-		67195CE1318C2EF647921C7EB1E4E6C0 /* WPObjectMapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E90591ABF7C23874CE8236796F4FC69 /* WPObjectMapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6A2B2536C1CD94F6E6969F156F4518FF /* NSObject+AutoDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = F0485D09AB5CAB4CB856B3BBE0E8872A /* NSObject+AutoDescription.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6B652906D2363EDA79EC83F799B76B35 /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E90FF0CA48E948617E12A82DF53A2E9B /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6BA4AC99C7F07836DC2D8A6C17C702D6 /* NSObject+ObjectMap.m in Sources */ = {isa = PBXBuildFile; fileRef = C61C3C3905340FD80B6DF162328EFA05 /* NSObject+ObjectMap.m */; };
-		79EE4BB89E8CF6E4ACA1ECA9ABD2C400 /* MBFakerName.h in Headers */ = {isa = PBXBuildFile; fileRef = BCF4C5CDE12E2A8243C0165F8EC84BF0 /* MBFakerName.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		81D1F32D88DD7DF8D8D2E7012DB9994C /* WPFaker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C38F0002AEAD497345092423071469B /* WPFaker-dummy.m */; };
-		8AA456D18D978483DE6F3A206EEA5C0B /* WPFakerDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90430D9C33A7ED5A8E45E3DC266C9FA9 /* WPFakerDate.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		8AC1189ABF4CFFC1FF3CA5DFC310E227 /* MBFaker.m in Sources */ = {isa = PBXBuildFile; fileRef = D9E16D9DA939A6EA14E60BAE07F5146D /* MBFaker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		9138DD7C9964DFBD896EBAF06D434DAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BD4961CD0ED74DFC496F7EEEBBC64CB /* Foundation.framework */; };
-		94F9DA58435261D480A790FF8D660A72 /* MBFakerCompany.m in Sources */ = {isa = PBXBuildFile; fileRef = 462653DFBEE5CAC9972DB30D86856A53 /* MBFakerCompany.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		989A0C44EA11B55913B3966157616125 /* emitter.c in Sources */ = {isa = PBXBuildFile; fileRef = 679763EB572D41276FED5D2D60A38EB9 /* emitter.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		9A5CB16050BD6574377EC398A70B4519 /* Pods-WPObjectMapperExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9499647F25CDCA11A1435C5155C9D9F /* Pods-WPObjectMapperExample-dummy.m */; };
-		A06EC4923A22F8A5FDFCC54D67F98A58 /* WPFaker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 61EAB07CD8BE5C55EC4A72B9A10566B8 /* WPFaker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A2B065765D8E83C989F86165070C640C /* WPFaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FA46F4A0826E18FC7BD2CA1B1D5E04F /* WPFaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A71249346C36728AA0C80C8ABE09C289 /* WPFakerNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2B31099D1CA11EBB2A54E5E84E8BCD /* WPFakerNumber.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		A7C6D1CF6F077ED6CF5662DFFC79E2E1 /* YAMLSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 3515A8747C794BB2A0159E83785FA860 /* YAMLSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A93461DDC58F90B84F180378BA73C735 /* RandomNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 756BE0F4C8FBF125DEC40287E91C4BFD /* RandomNumber.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		B0D4828DF91078F91C09240D489CCBAB /* Dates.h in Headers */ = {isa = PBXBuildFile; fileRef = AFE3EE25FFF051F614F9C9C31B523506 /* Dates.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BA7561915A1B4C7EE863A55DD6A5E03C /* MBFakerAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 42CCA3579F35E24245F1A32EAD7C3E04 /* MBFakerAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BAB303204BBDC980934C32C29CC9885B /* WPObjectMapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FC30334469EA39C38CA6724B23EF82 /* WPObjectMapper-dummy.m */; };
-		BB4EBCB55F83BF115F1F3E898FAC1AF1 /* NSString+Inflections.h in Headers */ = {isa = PBXBuildFile; fileRef = E70C09EB7807976960A20AF53BBAF89C /* NSString+Inflections.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BF23D6C47A667CC3777632555732F2A8 /* RandomNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 613F8E33555588F69F89D63EFFC90756 /* RandomNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C22C50A3DD6198AB2F86DA3024A2307E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BD4961CD0ED74DFC496F7EEEBBC64CB /* Foundation.framework */; };
-		C5A265704C62ECB4BB4113158A3FB5EB /* MBFakerLorem.h in Headers */ = {isa = PBXBuildFile; fileRef = D6263A34F6721066384DF8741D6FBBF7 /* MBFakerLorem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C7E6C45EBB1089242056F68384B32F39 /* NSObject+ObjectMap.h in Headers */ = {isa = PBXBuildFile; fileRef = FB8DB9BC3300998DD006C0C2F990935D /* NSObject+ObjectMap.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C81ED84437EDDA3D8207ADFA78360264 /* writer.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B3E15C4500865A3B64BE4203B1DD800 /* writer.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		CA7F1DBE96CC0FB5760E4FDA3662B424 /* MBFakerName.m in Sources */ = {isa = PBXBuildFile; fileRef = A9233582B6CB0B874E79F8C2E920878F /* MBFakerName.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		CD88482A0004E0C33EFA6D7EA9896C79 /* YAMLSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8A37F2709588AE3920080C2F0A5AF /* YAMLSerialization.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		D1138014CD47506CEB576F2BC7F1503A /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 13F455A991C38AA3ACA707523C09F773 /* parser.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		D24B11CFA9539ED1564C332BA9D7FDA6 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = A0921E2265D7B943D7510B74A78583B8 /* config.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D2FE0D0CEADF1DA93D197791C190908A /* MBFakerPhoneNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DD76716A33D1F9BEC6F95F18FECE7DB /* MBFakerPhoneNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D359E8B019428CD9DC9D99F6E40CDF94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BD4961CD0ED74DFC496F7EEEBBC64CB /* Foundation.framework */; };
-		D55E6669C05E7E02030DA1D90746DEF4 /* reader.c in Sources */ = {isa = PBXBuildFile; fileRef = EE7DFE5CE23989B1895244E53B381FA9 /* reader.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		DC171F0120C2106CD3EC590A8F5E2D13 /* MBFakerLorem.m in Sources */ = {isa = PBXBuildFile; fileRef = E72B5C5E81313ECC8C82A017252B44A1 /* MBFakerLorem.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		DD51D4E0CC1AB74E6751B414718F39E5 /* api.c in Sources */ = {isa = PBXBuildFile; fileRef = 3EF105F32BCA548456C391667247AB93 /* api.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		E177CE7321720B0FC31BF3ACF159EFE4 /* yaml.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC5FAEE2067F51429654106B4494F11 /* yaml.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E381880584E257D29B61E389ED6E0016 /* MBFakerPhoneNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = EC8D0396E71C2233DD530FD8AF1762B4 /* MBFakerPhoneNumber.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		E52F6DA77D349193CA5FBFCED0198954 /* Pods-WPObjectMapperExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1336D9CD829D91C7321B90643B8BEF76 /* Pods-WPObjectMapperExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EFE8D6685B300789DC57618C849F1AB3 /* fr.yml in Resources */ = {isa = PBXBuildFile; fileRef = 24A79C78EB4AF98C51E4B7A781DD479A /* fr.yml */; };
-		F197D9D0EB76AD20EFC7E456A315196A /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC097607BC97C4C2600342FEEB4A87BB /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests-dummy.m */; };
-		F356FFC30E91EF3FEF88BE052D5175E8 /* Dates.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F492B5CF086F5580AA0373B543323AC /* Dates.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		F3E77EA9CE345EB2770F32C45239C6EA /* MBFakerInternet.m in Sources */ = {isa = PBXBuildFile; fileRef = 47B71F805E6B9E6803890D63E71C1DC8 /* MBFakerInternet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		F9A7A21848B96EC866F3F347EDCAC917 /* MBFaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99611005FABD30C2E2812B23654AB7A9 /* MBFaker.framework */; };
-		FBFB49F23B312E403596EADD2A6F141E /* MBFakerAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E416E0A3EE24ABD70D2C21F23606EC /* MBFakerAddress.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		FDD9750A7A178CC36B77A9CD8E7B67AC /* WPFakerNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 57F255DA559B14DEEC2EE758068E4E53 /* WPFakerNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FE2ED71935FCC5A967331C355ABD2537 /* WPFakerDate.h in Headers */ = {isa = PBXBuildFile; fileRef = BF269AC25E17A100F5216F145F306DB9 /* WPFakerDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04260FA016CF53996624B2AF98E37DF9 /* MBFakerName.h in Headers */ = {isa = PBXBuildFile; fileRef = 06D13131F8139774C84FAF441BD6B85D /* MBFakerName.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		079F227327C568EA9625355595DD7EC2 /* writer.c in Sources */ = {isa = PBXBuildFile; fileRef = E29BC22F4CEFD9C358F44DDCA4107D68 /* writer.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0CEC2FED945FFCA68D954E3B8D49C5B7 /* MBFakerPhoneNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A8EA7C68F39E94275AE10FDBF964302 /* MBFakerPhoneNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1156DD1793D751A329A095E1192F815A /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 457BB5F5648C361DB411D46254F9F3FE /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests-dummy.m */; };
+		157B752A410BB831ADC24F6D41FE2ABE /* WPObjectMapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FBA8A9A8048E760CBDC0E7DF0F26F1C2 /* WPObjectMapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17A89770C65A21FF49E7763E1CB5FB61 /* nl.yml in Resources */ = {isa = PBXBuildFile; fileRef = 98572332C344DB9B228954420FE8999A /* nl.yml */; };
+		186F79632B07F8ED2CA25C901B357F49 /* NSObject+AutoDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = D477452BEAE602803E827145964CD6DC /* NSObject+AutoDescription.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19EB56B6355F31F5D26DD099C028E746 /* NSString+Inflections.h in Headers */ = {isa = PBXBuildFile; fileRef = BE55995817E4B0CD5D174F6C567EB46E /* NSString+Inflections.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B668114EC25A7E03F79AEBFFCBF616B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD74682838CE686C958832761E8699FC /* Foundation.framework */; };
+		1C0D340F3938EFB27B191B7B321DBE84 /* MBFaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F04391626B658BA19C8FA82CD7FBAB /* MBFaker.framework */; };
+		1FE67904893F44A446F7C4309D1CCE4A /* RandomNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = DD3FECCC22DDA446B42AC6777C2E8840 /* RandomNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2128453242EF22F990671218B3F42C66 /* pl.yml in Resources */ = {isa = PBXBuildFile; fileRef = 6DAD7C3E0186C0F6AC3391189BD2ED39 /* pl.yml */; };
+		24AD89FBD4F66C509E1D66D471D5B3DA /* ru.yml in Resources */ = {isa = PBXBuildFile; fileRef = 73AFEEC420DEA363A0B17913952BA708 /* ru.yml */; };
+		2641BA62A30633CF397D382554919DC5 /* de.yml in Resources */ = {isa = PBXBuildFile; fileRef = 6F6DA1582A5A0F1505A194E5FAA0F414 /* de.yml */; };
+		2800595ECF72B6E1EEB271064C1760ED /* scanner.c in Sources */ = {isa = PBXBuildFile; fileRef = 04BDFEA13468DD18430D6893850260FC /* scanner.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2B822D684A674B8CB61373AA5502B727 /* yaml.h in Headers */ = {isa = PBXBuildFile; fileRef = 49405D6D5AE8C6DEC78347133C888F90 /* yaml.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E78803D500BC1F7A1DCB9BF31D6935B /* NSObject+AutoDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5A22FEE0CA5E133CD3101C6C5A0684 /* NSObject+AutoDescription.m */; };
+		37B9392F029E84D3AA1EC1F4F2F21C3E /* MBFakerAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBFF5DF30DED459F7FDC99ABA989BE6 /* MBFakerAddress.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3FFCD3FABCF8AAA07CD0977493D69581 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD74682838CE686C958832761E8699FC /* Foundation.framework */; };
+		402B029A91B83C8FBE7776E2FAF8651B /* MBFaker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E8E7B9A098DBDD2E94A5F9E90A01D5E /* MBFaker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41251174C4536C9A20E01E1787386028 /* MBFakerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D053BFBA935F655B405CB9FED2A2487D /* MBFakerHelper.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		45A14B2209F3C6C511327EB81B282625 /* MBFakerHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B1082962355A456FCBE18BA64747C54 /* MBFakerHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45C62DDF9CC0630C3A22FC604CB56914 /* NSString+Inflections.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BF6FA5D2B9CFB74DA914408EC54D40 /* NSString+Inflections.m */; };
+		4CB18606ED002A2A3A2EDD3A45E84C04 /* MBFakerCompany.m in Sources */ = {isa = PBXBuildFile; fileRef = D4951515B34B4B2D7FAAFF30C2133B81 /* MBFakerCompany.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4D9DBBE69AFEBDE537622A359E7EB0A7 /* reader.c in Sources */ = {isa = PBXBuildFile; fileRef = 315BC1A79707A8AEC2118354E0147276 /* reader.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		51E003287063571E7E8B0267E2AFAB36 /* Dates.h in Headers */ = {isa = PBXBuildFile; fileRef = A653C8753B0F32AD45869C6BA54C3EE8 /* Dates.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		571ED23A16ED54DC759564BA0E88F5DB /* YAMLSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 6616F259C3FDCF689FF4D119ED949F6F /* YAMLSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58FFD4068AEC49E09282BFA119AC8BCC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD74682838CE686C958832761E8699FC /* Foundation.framework */; };
+		5F9283746D8768809681E3E68F66100F /* cs.yml in Resources */ = {isa = PBXBuildFile; fileRef = 53E0C9224CD199FF6B0078F1F23AE06B /* cs.yml */; };
+		6240BD7DC0DA4840E920C9383DC8712A /* WPObjectMapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C629C0147404B6F560D25C3A0E5BC627 /* WPObjectMapper-dummy.m */; };
+		801FFA515D541BE2F5B7EF1D4F2412E3 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = B7252405C3CAC401A504FDD68B1DBF4D /* config.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83CEFB3524966AD3BDA1B5A685C19247 /* Pods-WPObjectMapperExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0032F812F01C996BA2FBDFC51BF573B1 /* Pods-WPObjectMapperExample-dummy.m */; };
+		84E0C7AF4AC4C817E88CCF0F237CF8D8 /* YAMLSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5FA6ED2BE68106ADF8CEE05010CE93 /* YAMLSerialization.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		85589BCA7B75F3103311BBF194382631 /* RandomNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 4900A90F4190784EE4A477DCDA7E55DC /* RandomNumber.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		88DC159B5F2067F1032BA7BE9C362559 /* MBFaker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B86B1C53EAE6BC43CF7F34D1D1BA2EA6 /* MBFaker-dummy.m */; };
+		8E212979AEC8D7D7D1CC7D6128824004 /* WPFakerDate.h in Headers */ = {isa = PBXBuildFile; fileRef = A9CD3EA6A9955C24891F3BBB2BF9C6BA /* WPFakerDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90760181DBAFC109538EB6DAB14A726D /* api.c in Sources */ = {isa = PBXBuildFile; fileRef = 94213F0D9EA17FB67D40013CE580C014 /* api.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		90792AC5CFB92F09B8BFFD57855E83EE /* MBFakerName.m in Sources */ = {isa = PBXBuildFile; fileRef = AE35420F471022E21848AAF44B50A631 /* MBFakerName.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		95490B8704420EFDC9D65210C7603CEF /* yaml_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 02B42E8656B1508CD764EB88A178C2D4 /* yaml_private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A158E344F13665D9407C5EE02A5B9A3A /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA1FB04470DD8D67DC6C2725E0CF203F /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2222AC808273898D71BD0D201E44589 /* NSObject+ObjectMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B97556C8B1F5D006CCD90EDEC842B59 /* NSObject+ObjectMap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5342278F79F8E7B896A973D13623B3D /* MBFakerPhoneNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B241D45D34675DBF845330884B369DF /* MBFakerPhoneNumber.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A648B7CE12CAC386CBBAE730733E4234 /* Pods-WPObjectMapperExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EAE9CD149724493FF2917575B1122BA /* Pods-WPObjectMapperExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A87DD0552A9D844C959A66F5CBDD26F0 /* WPFaker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BABB350D47CDC6BC3D069AD57EC670A4 /* WPFaker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABA68BB0B27B7D3DCB0FDBB14BAAC29D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD74682838CE686C958832761E8699FC /* Foundation.framework */; };
+		AFC25F669057E8E3DB586006DD445826 /* WPFakerDate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6DB5A48539B556E7F76A0802D2A73B /* WPFakerDate.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B2143C67EF439D5376C30702C6461AA7 /* WPFakerNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 08ED2DFEE887A6EB6522A8CDAA2EA2AA /* WPFakerNumber.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B21504D6DE14E93771EFA844E0DF0B65 /* WPFaker.h in Headers */ = {isa = PBXBuildFile; fileRef = D005ECA381EBF843BA84932C80AE7364 /* WPFaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B257EB3DC7F01020A9A30BB5003FB000 /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 08EF21FEA0C5E543A447C933D5C8D883 /* parser.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B26043AA42903B247AC333303717957B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD74682838CE686C958832761E8699FC /* Foundation.framework */; };
+		B40DD404ED7CD788FD55D62CF2877473 /* MBFakerInternet.h in Headers */ = {isa = PBXBuildFile; fileRef = F44CE39EFC3C9B885EF8094ECC2A6746 /* MBFakerInternet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B66681D807E420190046EB3D94AEEB7A /* NSObject+ObjectMap.m in Sources */ = {isa = PBXBuildFile; fileRef = BC9917E87DC183F3B55DFB4AA3374EB9 /* NSObject+ObjectMap.m */; };
+		B71C8A16D1AD506F580AB179EFE1D11D /* MBFakerInternet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6389F5BFBB6495833A4CBDA17B18C7AE /* MBFakerInternet.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B7F35F5BC4055954D2EA52EA677385B2 /* MBFakerLorem.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A351AB6D86DE2C04AC9A4DA08A525D /* MBFakerLorem.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B87E0AEEE266321E267FCDB2727B0D33 /* WPFaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5810546D29D956C93B03E30963210BE8 /* WPFaker.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C75C15925AAC7440415B63BD18BECF83 /* MBFakerLorem.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DE0E820BFBBFDFFFC18930ABEB2979E /* MBFakerLorem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C847FD3CF1379965C4199FF25265345B /* WPFakerNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D53FD9E2639A74EE4B8A7B9CCCDB210 /* WPFakerNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4A61E7A7C9428A644CF994E0A9823B9 /* dumper.c in Sources */ = {isa = PBXBuildFile; fileRef = 85CA52EC93102DA7562920D1BAB1B9FF /* dumper.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D58BF971F8D48F8A2462D912E5E67551 /* loader.c in Sources */ = {isa = PBXBuildFile; fileRef = 57CD451E68E17F21B4C3067C6F838E91 /* loader.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D98392AF1DA1BFAE879EC3BAC9DCB859 /* fr.yml in Resources */ = {isa = PBXBuildFile; fileRef = C6E19BD2F3CD311543E89516F99EA638 /* fr.yml */; };
+		DDF1C3B369E509346A9ED33FB0BFE529 /* Dates.m in Sources */ = {isa = PBXBuildFile; fileRef = 77371C0323F6B51EE7801408C5F22814 /* Dates.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		DEB55853885A09EDB482177525E40EAB /* emitter.c in Sources */ = {isa = PBXBuildFile; fileRef = A8B85F19BF8264ED41E140199A9659A7 /* emitter.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		EEB2D02C28E9E8C673D6813F6F13EA7D /* en.yml in Resources */ = {isa = PBXBuildFile; fileRef = 2B3D14BDCC943F5638EC94DB6AD94CD5 /* en.yml */; };
+		F15C5FBD690FEE3B027B049B88143754 /* MBFakerAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C13BCAA0D6D059F9A339996C59DDBDC /* MBFakerAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4149C3E048CB92F33FAF5F022460486 /* MBFakerCompany.h in Headers */ = {isa = PBXBuildFile; fileRef = AC7000CAAC974C9C265519F45AD38F3B /* MBFakerCompany.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5400596147A41C3BECDFF6C6463330F /* MBFaker.h in Headers */ = {isa = PBXBuildFile; fileRef = FF93833473A5D99725299A8FA40B250A /* MBFaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F96CC368C2A46193A6C39FE7F8721036 /* WPFaker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C0CF18E3400E581CFA79D1330EA0C9 /* WPFaker-dummy.m */; };
+		FE00C1D7A05F9F511623B6FACA594AC1 /* MBFaker.m in Sources */ = {isa = PBXBuildFile; fileRef = C6174A23C603F4AB0556D113C2EF55CE /* MBFaker.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2BC237709D14AA79F4CFBA3A434167F9 /* PBXContainerItemProxy */ = {
+		1FFA951BE83ED353E71AE908880B463A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 194A5A3C9A61468A27C9E87500AEBB73;
-			remoteInfo = MBFaker;
-		};
-		2EA2F6AA382932CD6AE37EEF6F9F56B2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 506B68F64792CF0A32F1F8564B46CB01;
-			remoteInfo = WPObjectMapper;
-		};
-		2F7A73D3EDF1DF10B693E9BE63A9A998 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 506B68F64792CF0A32F1F8564B46CB01;
-			remoteInfo = WPObjectMapper;
-		};
-		A86F4FEB4298D10E8C85FFA037896306 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 194A5A3C9A61468A27C9E87500AEBB73;
-			remoteInfo = MBFaker;
-		};
-		C3BDE07F4BCA3B2F1710481725F998FC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1557DFA128ED45CE997AFCE2D1D04293;
+			remoteGlobalIDString = 159EC8181BE753993DEB895251FA6F67;
 			remoteInfo = WPFaker;
 		};
-		DBE7B60ED07B242107841A64DD8D3988 /* PBXContainerItemProxy */ = {
+		3526EE26B3CA5AFC7C0E6C6E7BE1B364 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1557DFA128ED45CE997AFCE2D1D04293;
+			remoteGlobalIDString = 956E479B45B1E09D0CA57F6FA28B3DE6;
+			remoteInfo = WPObjectMapper;
+		};
+		562E65B08B19E50636FEB784CD41E75B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D55631D2F7513230F0E6116198FF117A;
+			remoteInfo = MBFaker;
+		};
+		779DEA5ECD7730C75C53C6F23FEA6158 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 956E479B45B1E09D0CA57F6FA28B3DE6;
+			remoteInfo = WPObjectMapper;
+		};
+		982864E1AB91684975D6C44012BE699F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D55631D2F7513230F0E6116198FF117A;
+			remoteInfo = MBFaker;
+		};
+		9F9A9B779B08A52C694EEBC2C9E11E77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 159EC8181BE753993DEB895251FA6F67;
 			remoteInfo = WPFaker;
 		};
-		E760F672FB9F8B8D68FBB7E38E4C3A06 /* PBXContainerItemProxy */ = {
+		BDCDA40DA000F82B32192D33AD595757 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 194A5A3C9A61468A27C9E87500AEBB73;
+			remoteGlobalIDString = D55631D2F7513230F0E6116198FF117A;
 			remoteInfo = MBFaker;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0FDF8F214FB7C22D28E5E5FCD5B4DF5D /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WPObjectMapperExample-WPObjectMapperExampleTests-frameworks.sh"; sourceTree = "<group>"; };
-		100D678890528002541423E2C06E6B0E /* MBFakerInternet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBFakerInternet.h; path = MBFaker/MBFakerInternet.h; sourceTree = "<group>"; };
-		1336D9CD829D91C7321B90643B8BEF76 /* Pods-WPObjectMapperExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WPObjectMapperExample-umbrella.h"; sourceTree = "<group>"; };
-		13AA486DB70406D94FF77AD159306438 /* WPObjectMapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = WPObjectMapper.modulemap; sourceTree = "<group>"; };
-		13F455A991C38AA3ACA707523C09F773 /* parser.c */ = {isa = PBXFileReference; includeInIndex = 1; name = parser.c; path = "MBFaker/yaml-0.1.3/src/parser.c"; sourceTree = "<group>"; };
-		164228282B6317780A009982DC739DFF /* dumper.c */ = {isa = PBXFileReference; includeInIndex = 1; name = dumper.c; path = "MBFaker/yaml-0.1.3/src/dumper.c"; sourceTree = "<group>"; };
-		168FE9E2FBEC1C861DC5C66399E04F1F /* ru.yml */ = {isa = PBXFileReference; includeInIndex = 1; name = ru.yml; path = MBFaker/Locales/ru.yml; sourceTree = "<group>"; };
-		1925AB5F8F30ED07AC1280F0CE7A7DE4 /* yaml_private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = yaml_private.h; path = "MBFaker/yaml-0.1.3/src/yaml_private.h"; sourceTree = "<group>"; };
-		217CCD18336B0790379AE14F6815833D /* Pods-WPObjectMapperExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WPObjectMapperExample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		24A79C78EB4AF98C51E4B7A781DD479A /* fr.yml */ = {isa = PBXFileReference; includeInIndex = 1; name = fr.yml; path = MBFaker/Locales/fr.yml; sourceTree = "<group>"; };
-		2696F500591222CFF60D979C1C1E2ADF /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WPObjectMapperExample-WPObjectMapperExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
-		28E416E0A3EE24ABD70D2C21F23606EC /* MBFakerAddress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBFakerAddress.m; path = MBFaker/MBFakerAddress.m; sourceTree = "<group>"; };
-		2C73F2F1AEB44EB235645326EC8349E6 /* en.yml */ = {isa = PBXFileReference; includeInIndex = 1; name = en.yml; path = MBFaker/Locales/en.yml; sourceTree = "<group>"; };
-		2DB0D516F9AD9DF77403277A5A05E5DC /* scanner.c */ = {isa = PBXFileReference; includeInIndex = 1; name = scanner.c; path = "MBFaker/yaml-0.1.3/src/scanner.c"; sourceTree = "<group>"; };
-		2DD76716A33D1F9BEC6F95F18FECE7DB /* MBFakerPhoneNumber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBFakerPhoneNumber.h; path = MBFaker/MBFakerPhoneNumber.h; sourceTree = "<group>"; };
-		3515A8747C794BB2A0159E83785FA860 /* YAMLSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YAMLSerialization.h; path = MBFaker/YAMLSerialization.h; sourceTree = "<group>"; };
-		3567D9588706A1B6562E66F5088F59A8 /* MBFakerHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBFakerHelper.h; path = MBFaker/MBFakerHelper.h; sourceTree = "<group>"; };
-		3EF105F32BCA548456C391667247AB93 /* api.c */ = {isa = PBXFileReference; includeInIndex = 1; name = api.c; path = "MBFaker/yaml-0.1.3/src/api.c"; sourceTree = "<group>"; };
-		40178092720974AE172440007A9568AA /* Pods-WPObjectMapperExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WPObjectMapperExample.release.xcconfig"; sourceTree = "<group>"; };
-		40D172F6F45D8ED344C10A8C96DA5A9D /* loader.c */ = {isa = PBXFileReference; includeInIndex = 1; name = loader.c; path = "MBFaker/yaml-0.1.3/src/loader.c"; sourceTree = "<group>"; };
-		42CCA3579F35E24245F1A32EAD7C3E04 /* MBFakerAddress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBFakerAddress.h; path = MBFaker/MBFakerAddress.h; sourceTree = "<group>"; };
-		462653DFBEE5CAC9972DB30D86856A53 /* MBFakerCompany.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBFakerCompany.m; path = MBFaker/MBFakerCompany.m; sourceTree = "<group>"; };
-		47B71F805E6B9E6803890D63E71C1DC8 /* MBFakerInternet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBFakerInternet.m; path = MBFaker/MBFakerInternet.m; sourceTree = "<group>"; };
-		4A98F5EC15D9BE7A0ED83127D07B9FBA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4B3E15C4500865A3B64BE4203B1DD800 /* writer.c */ = {isa = PBXFileReference; includeInIndex = 1; name = writer.c; path = "MBFaker/yaml-0.1.3/src/writer.c"; sourceTree = "<group>"; };
-		4D1615447D4F7F582D3525987056AE53 /* Pods-WPObjectMapperExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WPObjectMapperExample.debug.xcconfig"; sourceTree = "<group>"; };
-		576FA97A0296655975461A0A09F07559 /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WPObjectMapperExample-WPObjectMapperExampleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		57F255DA559B14DEEC2EE758068E4E53 /* WPFakerNumber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPFakerNumber.h; path = WPFaker/WPFakerNumber.h; sourceTree = "<group>"; };
-		5A4C4F19624F77EF35E868103C06B6A8 /* Pods-WPObjectMapperExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-WPObjectMapperExample.modulemap"; sourceTree = "<group>"; };
-		5C623198E074FEB54B7518BB667BC55C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5FC5FAEE2067F51429654106B4494F11 /* yaml.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = yaml.h; path = "MBFaker/yaml-0.1.3/include/yaml.h"; sourceTree = "<group>"; };
-		613F8E33555588F69F89D63EFFC90756 /* RandomNumber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RandomNumber.h; path = WPFaker/RandomNumber.h; sourceTree = "<group>"; };
-		61EAB07CD8BE5C55EC4A72B9A10566B8 /* WPFaker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WPFaker-umbrella.h"; sourceTree = "<group>"; };
-		679763EB572D41276FED5D2D60A38EB9 /* emitter.c */ = {isa = PBXFileReference; includeInIndex = 1; name = emitter.c; path = "MBFaker/yaml-0.1.3/src/emitter.c"; sourceTree = "<group>"; };
-		68DF0F76BD90A00AFDFB953678832BD9 /* WPFaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPFaker.m; path = WPFaker/WPFaker.m; sourceTree = "<group>"; };
-		6AA44790AA5B31E09A93BDA5C58A5701 /* MBFaker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBFaker-umbrella.h"; sourceTree = "<group>"; };
-		6CF0E90D678ABD4A10F76B892085A360 /* cs.yml */ = {isa = PBXFileReference; includeInIndex = 1; name = cs.yml; path = MBFaker/Locales/cs.yml; sourceTree = "<group>"; };
-		6E90591ABF7C23874CE8236796F4FC69 /* WPObjectMapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WPObjectMapper-umbrella.h"; sourceTree = "<group>"; };
-		6F492B5CF086F5580AA0373B543323AC /* Dates.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Dates.m; path = WPFaker/Dates.m; sourceTree = "<group>"; };
-		6FA46F4A0826E18FC7BD2CA1B1D5E04F /* WPFaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPFaker.h; path = WPFaker/WPFaker.h; sourceTree = "<group>"; };
-		756BE0F4C8FBF125DEC40287E91C4BFD /* RandomNumber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RandomNumber.m; path = WPFaker/RandomNumber.m; sourceTree = "<group>"; };
-		78D759B3375CE055DE5671A08300E3AD /* Pods-WPObjectMapperExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WPObjectMapperExample-acknowledgements.plist"; sourceTree = "<group>"; };
-		7C38F0002AEAD497345092423071469B /* WPFaker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WPFaker-dummy.m"; sourceTree = "<group>"; };
-		7DBAA504531D725D5A486A4B584F8AD2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		82D5584F8261D22A3309CE8265C0FE12 /* WPFaker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = WPFaker.modulemap; sourceTree = "<group>"; };
-		8BD0A15D9DF54CF5CAB3C3A1F364C4D2 /* MBFaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBFaker.framework; path = MBFaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8DC22D1F5BE85F03E65EC2FD36EEEE79 /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-WPObjectMapperExample-WPObjectMapperExampleTests.modulemap"; sourceTree = "<group>"; };
-		8F2B31099D1CA11EBB2A54E5E84E8BCD /* WPFakerNumber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPFakerNumber.m; path = WPFaker/WPFakerNumber.m; sourceTree = "<group>"; };
-		90430D9C33A7ED5A8E45E3DC266C9FA9 /* WPFakerDate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPFakerDate.m; path = WPFaker/WPFakerDate.m; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9459BAAF6716749F67BF92160F0367C3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		99611005FABD30C2E2812B23654AB7A9 /* MBFaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBFaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B336438F2387FE8D39A3CDF1D570EC6 /* de.yml */ = {isa = PBXFileReference; includeInIndex = 1; name = de.yml; path = MBFaker/Locales/de.yml; sourceTree = "<group>"; };
-		9BD4961CD0ED74DFC496F7EEEBBC64CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		9C6535169975720C0E7F58706D7652BA /* Pods-WPObjectMapperExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WPObjectMapperExample-frameworks.sh"; sourceTree = "<group>"; };
-		A0921E2265D7B943D7510B74A78583B8 /* config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = config.h; path = "MBFaker/yaml-0.1.3/config.h"; sourceTree = "<group>"; };
-		A2B7EB01D3A2469A48E09E15785921CD /* MBFakerCompany.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBFakerCompany.h; path = MBFaker/MBFakerCompany.h; sourceTree = "<group>"; };
-		A5D6DD5FE8DBB7BDD822C2A5101681DF /* Pods_WPObjectMapperExample_WPObjectMapperExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WPObjectMapperExample_WPObjectMapperExampleTests.framework; path = "Pods-WPObjectMapperExample-WPObjectMapperExampleTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9233582B6CB0B874E79F8C2E920878F /* MBFakerName.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBFakerName.m; path = MBFaker/MBFakerName.m; sourceTree = "<group>"; };
-		A9499647F25CDCA11A1435C5155C9D9F /* Pods-WPObjectMapperExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WPObjectMapperExample-dummy.m"; sourceTree = "<group>"; };
-		AA178B5ACDAB3D8FA54153DE5FDEEE78 /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WPObjectMapperExample-WPObjectMapperExampleTests-resources.sh"; sourceTree = "<group>"; };
-		AA2A09114F7EFC0B66BBE36E99614747 /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WPObjectMapperExample-WPObjectMapperExampleTests.release.xcconfig"; sourceTree = "<group>"; };
-		AFE3EE25FFF051F614F9C9C31B523506 /* Dates.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Dates.h; path = WPFaker/Dates.h; sourceTree = "<group>"; };
-		B098276869AF1FBD887C3D7D127AC467 /* nl.yml */ = {isa = PBXFileReference; includeInIndex = 1; name = nl.yml; path = MBFaker/Locales/nl.yml; sourceTree = "<group>"; };
-		B3906F4ED1BDE3188779BD0C535F380F /* MBFaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBFaker.h; path = MBFaker/MBFaker.h; sourceTree = "<group>"; };
-		BC1951EAA9492FA3DBA77BEA021D9EA9 /* WPFaker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WPFaker.xcconfig; sourceTree = "<group>"; };
-		BCD8F27A687E0F3D84037D4AE4619AB0 /* NSString+Inflections.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Inflections.m"; path = "WPObjectMapper/NSString+Inflections.m"; sourceTree = "<group>"; };
-		BCF4C5CDE12E2A8243C0165F8EC84BF0 /* MBFakerName.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBFakerName.h; path = MBFaker/MBFakerName.h; sourceTree = "<group>"; };
-		BE97CF1E04E8B80BDEB806A2EF5F2B6F /* WPObjectMapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WPObjectMapper.xcconfig; sourceTree = "<group>"; };
-		BF269AC25E17A100F5216F145F306DB9 /* WPFakerDate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPFakerDate.h; path = WPFaker/WPFakerDate.h; sourceTree = "<group>"; };
-		C61C3C3905340FD80B6DF162328EFA05 /* NSObject+ObjectMap.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+ObjectMap.m"; path = "WPObjectMapper/NSObject+ObjectMap.m"; sourceTree = "<group>"; };
-		C67110238A724DA96A00F10BA9C2500E /* Pods-WPObjectMapperExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WPObjectMapperExample-resources.sh"; sourceTree = "<group>"; };
-		C7CF6C7D0221F2B45B406C0FCAF07273 /* WPFaker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WPFaker-prefix.pch"; sourceTree = "<group>"; };
-		D1FA1B6A5A4282C6557DC2DAE381EFA6 /* MBFaker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MBFaker.modulemap; sourceTree = "<group>"; };
-		D2C6F1EE719C2B7CE87BCABDA0CEBBFF /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WPObjectMapperExample-WPObjectMapperExampleTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		D5493A35020391B0C9F4A98721847699 /* MBFaker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBFaker-prefix.pch"; sourceTree = "<group>"; };
-		D6263A34F6721066384DF8741D6FBBF7 /* MBFakerLorem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBFakerLorem.h; path = MBFaker/MBFakerLorem.h; sourceTree = "<group>"; };
-		D9E16D9DA939A6EA14E60BAE07F5146D /* MBFaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBFaker.m; path = MBFaker/MBFaker.m; sourceTree = "<group>"; };
-		DD78B2A23C422210E7D753E3BF446E4B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E010CA8BC7861E9536DA84EFF1DC0E6E /* Pods_WPObjectMapperExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WPObjectMapperExample.framework; path = "Pods-WPObjectMapperExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1B379D5C8E76F28E9ABBCFB134F46F3 /* WPObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WPObjectMapper.framework; path = WPObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E30F619D385423D558DF83971E6EB02C /* NSObject+AutoDescription.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+AutoDescription.m"; path = "WPObjectMapper/NSObject+AutoDescription.m"; sourceTree = "<group>"; };
-		E70C09EB7807976960A20AF53BBAF89C /* NSString+Inflections.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Inflections.h"; path = "WPObjectMapper/NSString+Inflections.h"; sourceTree = "<group>"; };
-		E72B5C5E81313ECC8C82A017252B44A1 /* MBFakerLorem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBFakerLorem.m; path = MBFaker/MBFakerLorem.m; sourceTree = "<group>"; };
-		E90FF0CA48E948617E12A82DF53A2E9B /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WPObjectMapperExample-WPObjectMapperExampleTests-umbrella.h"; sourceTree = "<group>"; };
-		E9479263C40E38399D11BB37EB0A8405 /* MBFaker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBFaker-dummy.m"; sourceTree = "<group>"; };
-		EC8D0396E71C2233DD530FD8AF1762B4 /* MBFakerPhoneNumber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBFakerPhoneNumber.m; path = MBFaker/MBFakerPhoneNumber.m; sourceTree = "<group>"; };
-		EE7DFE5CE23989B1895244E53B381FA9 /* reader.c */ = {isa = PBXFileReference; includeInIndex = 1; name = reader.c; path = "MBFaker/yaml-0.1.3/src/reader.c"; sourceTree = "<group>"; };
-		EEAB60143B40D7E567D4C9DDF8C12279 /* WPObjectMapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WPObjectMapper-prefix.pch"; sourceTree = "<group>"; };
-		F0485D09AB5CAB4CB856B3BBE0E8872A /* NSObject+AutoDescription.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+AutoDescription.h"; path = "WPObjectMapper/NSObject+AutoDescription.h"; sourceTree = "<group>"; };
-		F0FA1E4A0339AAFB19C6A90343847289 /* MBFaker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBFaker.xcconfig; sourceTree = "<group>"; };
-		F3FC30334469EA39C38CA6724B23EF82 /* WPObjectMapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WPObjectMapper-dummy.m"; sourceTree = "<group>"; };
-		F5D8A37F2709588AE3920080C2F0A5AF /* YAMLSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YAMLSerialization.m; path = MBFaker/YAMLSerialization.m; sourceTree = "<group>"; };
-		F6AC7BBBC1F9E3915DA2E295E707577B /* WPFaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WPFaker.framework; path = WPFaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB47F30E7286004444F21F31EBE7CC78 /* MBFakerHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBFakerHelper.m; path = MBFaker/MBFakerHelper.m; sourceTree = "<group>"; };
-		FB8DB9BC3300998DD006C0C2F990935D /* NSObject+ObjectMap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+ObjectMap.h"; path = "WPObjectMapper/NSObject+ObjectMap.h"; sourceTree = "<group>"; };
-		FC097607BC97C4C2600342FEEB4A87BB /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WPObjectMapperExample-WPObjectMapperExampleTests-dummy.m"; sourceTree = "<group>"; };
-		FF66A6040744C2A85C20530162B1D969 /* pl.yml */ = {isa = PBXFileReference; includeInIndex = 1; name = pl.yml; path = MBFaker/Locales/pl.yml; sourceTree = "<group>"; };
+		0032F812F01C996BA2FBDFC51BF573B1 /* Pods-WPObjectMapperExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WPObjectMapperExample-dummy.m"; sourceTree = "<group>"; };
+		020FC413CAC2AE35A7FA4AD4471994CA /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WPObjectMapperExample-WPObjectMapperExampleTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		02B42E8656B1508CD764EB88A178C2D4 /* yaml_private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = yaml_private.h; path = "MBFaker/yaml-0.1.3/src/yaml_private.h"; sourceTree = "<group>"; };
+		04BDFEA13468DD18430D6893850260FC /* scanner.c */ = {isa = PBXFileReference; includeInIndex = 1; name = scanner.c; path = "MBFaker/yaml-0.1.3/src/scanner.c"; sourceTree = "<group>"; };
+		051D6A0F9211DCA890191C501989264B /* WPFaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WPFaker.framework; path = WPFaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		06D13131F8139774C84FAF441BD6B85D /* MBFakerName.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBFakerName.h; path = MBFaker/MBFakerName.h; sourceTree = "<group>"; };
+		08ED2DFEE887A6EB6522A8CDAA2EA2AA /* WPFakerNumber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPFakerNumber.m; path = WPFaker/WPFakerNumber.m; sourceTree = "<group>"; };
+		08EF21FEA0C5E543A447C933D5C8D883 /* parser.c */ = {isa = PBXFileReference; includeInIndex = 1; name = parser.c; path = "MBFaker/yaml-0.1.3/src/parser.c"; sourceTree = "<group>"; };
+		25FD7D1127C32B2EE5977201CF23B18F /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WPObjectMapperExample-WPObjectMapperExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		2B3D14BDCC943F5638EC94DB6AD94CD5 /* en.yml */ = {isa = PBXFileReference; includeInIndex = 1; name = en.yml; path = MBFaker/Locales/en.yml; sourceTree = "<group>"; };
+		2B97556C8B1F5D006CCD90EDEC842B59 /* NSObject+ObjectMap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+ObjectMap.h"; path = "WPObjectMapper/NSObject+ObjectMap.h"; sourceTree = "<group>"; };
+		315BC1A79707A8AEC2118354E0147276 /* reader.c */ = {isa = PBXFileReference; includeInIndex = 1; name = reader.c; path = "MBFaker/yaml-0.1.3/src/reader.c"; sourceTree = "<group>"; };
+		317CCA19CAFEA722EA38C76EE04B588F /* Pods-WPObjectMapperExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WPObjectMapperExample.release.xcconfig"; sourceTree = "<group>"; };
+		370992D2879ADDE994FF0E4DE2037D29 /* WPObjectMapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WPObjectMapper.modulemap; sourceTree = "<group>"; };
+		3A8EA7C68F39E94275AE10FDBF964302 /* MBFakerPhoneNumber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBFakerPhoneNumber.h; path = MBFaker/MBFakerPhoneNumber.h; sourceTree = "<group>"; };
+		3EAE9CD149724493FF2917575B1122BA /* Pods-WPObjectMapperExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WPObjectMapperExample-umbrella.h"; sourceTree = "<group>"; };
+		4250CE56AE03587D6D2B6514EF0EEC48 /* WPObjectMapper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WPObjectMapper-Info.plist"; sourceTree = "<group>"; };
+		445A4365646D3D2E06608C8452EDF004 /* Pods-WPObjectMapperExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WPObjectMapperExample-frameworks.sh"; sourceTree = "<group>"; };
+		457BB5F5648C361DB411D46254F9F3FE /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WPObjectMapperExample-WPObjectMapperExampleTests-dummy.m"; sourceTree = "<group>"; };
+		4730A99E863718013882CE209A0F334C /* Pods-WPObjectMapperExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WPObjectMapperExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		4900A90F4190784EE4A477DCDA7E55DC /* RandomNumber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RandomNumber.m; path = WPFaker/RandomNumber.m; sourceTree = "<group>"; };
+		49405D6D5AE8C6DEC78347133C888F90 /* yaml.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = yaml.h; path = "MBFaker/yaml-0.1.3/include/yaml.h"; sourceTree = "<group>"; };
+		4B241D45D34675DBF845330884B369DF /* MBFakerPhoneNumber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBFakerPhoneNumber.m; path = MBFaker/MBFakerPhoneNumber.m; sourceTree = "<group>"; };
+		4C6A3D0164BFA7C70FB0354E8D66451C /* WPFaker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WPFaker.modulemap; sourceTree = "<group>"; };
+		4CB54C3F2A194B72EB9377D9FA951D27 /* MBFaker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MBFaker.modulemap; sourceTree = "<group>"; };
+		53E0C9224CD199FF6B0078F1F23AE06B /* cs.yml */ = {isa = PBXFileReference; includeInIndex = 1; name = cs.yml; path = MBFaker/Locales/cs.yml; sourceTree = "<group>"; };
+		57CD451E68E17F21B4C3067C6F838E91 /* loader.c */ = {isa = PBXFileReference; includeInIndex = 1; name = loader.c; path = "MBFaker/yaml-0.1.3/src/loader.c"; sourceTree = "<group>"; };
+		5810546D29D956C93B03E30963210BE8 /* WPFaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPFaker.m; path = WPFaker/WPFaker.m; sourceTree = "<group>"; };
+		58F04391626B658BA19C8FA82CD7FBAB /* MBFaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBFaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DE0E820BFBBFDFFFC18930ABEB2979E /* MBFakerLorem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBFakerLorem.h; path = MBFaker/MBFakerLorem.h; sourceTree = "<group>"; };
+		5E8E7B9A098DBDD2E94A5F9E90A01D5E /* MBFaker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBFaker-umbrella.h"; sourceTree = "<group>"; };
+		5F1E9BB095670DC9D0070A1FB11DC482 /* Pods-WPObjectMapperExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WPObjectMapperExample.modulemap"; sourceTree = "<group>"; };
+		6389F5BFBB6495833A4CBDA17B18C7AE /* MBFakerInternet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBFakerInternet.m; path = MBFaker/MBFakerInternet.m; sourceTree = "<group>"; };
+		6616F259C3FDCF689FF4D119ED949F6F /* YAMLSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YAMLSerialization.h; path = MBFaker/YAMLSerialization.h; sourceTree = "<group>"; };
+		6C13BCAA0D6D059F9A339996C59DDBDC /* MBFakerAddress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBFakerAddress.h; path = MBFaker/MBFakerAddress.h; sourceTree = "<group>"; };
+		6DAD7C3E0186C0F6AC3391189BD2ED39 /* pl.yml */ = {isa = PBXFileReference; includeInIndex = 1; name = pl.yml; path = MBFaker/Locales/pl.yml; sourceTree = "<group>"; };
+		6E73714740700DC2ABB2FBF66081832F /* MBFaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBFaker.framework; path = MBFaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EB7D5870600029A7C4ACAE22A4FBF6A /* WPFaker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WPFaker-Info.plist"; sourceTree = "<group>"; };
+		6F6DA1582A5A0F1505A194E5FAA0F414 /* de.yml */ = {isa = PBXFileReference; includeInIndex = 1; name = de.yml; path = MBFaker/Locales/de.yml; sourceTree = "<group>"; };
+		73AFEEC420DEA363A0B17913952BA708 /* ru.yml */ = {isa = PBXFileReference; includeInIndex = 1; name = ru.yml; path = MBFaker/Locales/ru.yml; sourceTree = "<group>"; };
+		77371C0323F6B51EE7801408C5F22814 /* Dates.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Dates.m; path = WPFaker/Dates.m; sourceTree = "<group>"; };
+		7B1082962355A456FCBE18BA64747C54 /* MBFakerHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBFakerHelper.h; path = MBFaker/MBFakerHelper.h; sourceTree = "<group>"; };
+		7CA1D4A5A1727B5FB2FB307FB02EE04F /* WPObjectMapper.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WPObjectMapper.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7D53FD9E2639A74EE4B8A7B9CCCDB210 /* WPFakerNumber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPFakerNumber.h; path = WPFaker/WPFakerNumber.h; sourceTree = "<group>"; };
+		7E87FEA13E4A2D745F72D0ED0172B320 /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WPObjectMapperExample-WPObjectMapperExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7FB419E0F76C7E251DB8A20711454830 /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WPObjectMapperExample-WPObjectMapperExampleTests-Info.plist"; sourceTree = "<group>"; };
+		84A351AB6D86DE2C04AC9A4DA08A525D /* MBFakerLorem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBFakerLorem.m; path = MBFaker/MBFakerLorem.m; sourceTree = "<group>"; };
+		85CA52EC93102DA7562920D1BAB1B9FF /* dumper.c */ = {isa = PBXFileReference; includeInIndex = 1; name = dumper.c; path = "MBFaker/yaml-0.1.3/src/dumper.c"; sourceTree = "<group>"; };
+		89BF6FA5D2B9CFB74DA914408EC54D40 /* NSString+Inflections.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Inflections.m"; path = "WPObjectMapper/NSString+Inflections.m"; sourceTree = "<group>"; };
+		8FE32DE4915B9CD1EB1904A0C809CC70 /* WPObjectMapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WPObjectMapper-prefix.pch"; sourceTree = "<group>"; };
+		94213F0D9EA17FB67D40013CE580C014 /* api.c */ = {isa = PBXFileReference; includeInIndex = 1; name = api.c; path = "MBFaker/yaml-0.1.3/src/api.c"; sourceTree = "<group>"; };
+		94C0CF18E3400E581CFA79D1330EA0C9 /* WPFaker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WPFaker-dummy.m"; sourceTree = "<group>"; };
+		95CC1704738EF8951C553F8AFA05E9F2 /* Pods-WPObjectMapperExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WPObjectMapperExample-Info.plist"; sourceTree = "<group>"; };
+		98572332C344DB9B228954420FE8999A /* nl.yml */ = {isa = PBXFileReference; includeInIndex = 1; name = nl.yml; path = MBFaker/Locales/nl.yml; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A54E1F966075ED959B748B382807436F /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WPObjectMapperExample-WPObjectMapperExampleTests-frameworks.sh"; sourceTree = "<group>"; };
+		A653C8753B0F32AD45869C6BA54C3EE8 /* Dates.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Dates.h; path = WPFaker/Dates.h; sourceTree = "<group>"; };
+		A7AD71E7DB8BFA3F0A0E3D716ECCDEFD /* Pods-WPObjectMapperExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WPObjectMapperExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A8B85F19BF8264ED41E140199A9659A7 /* emitter.c */ = {isa = PBXFileReference; includeInIndex = 1; name = emitter.c; path = "MBFaker/yaml-0.1.3/src/emitter.c"; sourceTree = "<group>"; };
+		A8D2E11F53EB37F2B56FBD375BC9D7E3 /* WPObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WPObjectMapper.framework; path = WPObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9CD3EA6A9955C24891F3BBB2BF9C6BA /* WPFakerDate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPFakerDate.h; path = WPFaker/WPFakerDate.h; sourceTree = "<group>"; };
+		AC7000CAAC974C9C265519F45AD38F3B /* MBFakerCompany.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBFakerCompany.h; path = MBFaker/MBFakerCompany.h; sourceTree = "<group>"; };
+		AE35420F471022E21848AAF44B50A631 /* MBFakerName.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBFakerName.m; path = MBFaker/MBFakerName.m; sourceTree = "<group>"; };
+		B7252405C3CAC401A504FDD68B1DBF4D /* config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = config.h; path = "MBFaker/yaml-0.1.3/config.h"; sourceTree = "<group>"; };
+		B758AAF1E7ED4BC60EF9B1F09A2609B7 /* Pods-WPObjectMapperExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WPObjectMapperExample.debug.xcconfig"; sourceTree = "<group>"; };
+		B86B1C53EAE6BC43CF7F34D1D1BA2EA6 /* MBFaker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBFaker-dummy.m"; sourceTree = "<group>"; };
+		B92C1AC592AEA1469C3CEF3F59392E8A /* Pods_WPObjectMapperExample_WPObjectMapperExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WPObjectMapperExample_WPObjectMapperExampleTests.framework; path = "Pods-WPObjectMapperExample-WPObjectMapperExampleTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA6DB5A48539B556E7F76A0802D2A73B /* WPFakerDate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WPFakerDate.m; path = WPFaker/WPFakerDate.m; sourceTree = "<group>"; };
+		BABB350D47CDC6BC3D069AD57EC670A4 /* WPFaker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WPFaker-umbrella.h"; sourceTree = "<group>"; };
+		BC9917E87DC183F3B55DFB4AA3374EB9 /* NSObject+ObjectMap.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+ObjectMap.m"; path = "WPObjectMapper/NSObject+ObjectMap.m"; sourceTree = "<group>"; };
+		BD74682838CE686C958832761E8699FC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		BE55995817E4B0CD5D174F6C567EB46E /* NSString+Inflections.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Inflections.h"; path = "WPObjectMapper/NSString+Inflections.h"; sourceTree = "<group>"; };
+		BE91C142037B00564C0A6358C7B94753 /* MBFaker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBFaker.xcconfig; sourceTree = "<group>"; };
+		C6174A23C603F4AB0556D113C2EF55CE /* MBFaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBFaker.m; path = MBFaker/MBFaker.m; sourceTree = "<group>"; };
+		C629C0147404B6F560D25C3A0E5BC627 /* WPObjectMapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WPObjectMapper-dummy.m"; sourceTree = "<group>"; };
+		C6E19BD2F3CD311543E89516F99EA638 /* fr.yml */ = {isa = PBXFileReference; includeInIndex = 1; name = fr.yml; path = MBFaker/Locales/fr.yml; sourceTree = "<group>"; };
+		CADA8DDAC6DD6BA269EC2C3435288223 /* WPFaker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WPFaker.xcconfig; sourceTree = "<group>"; };
+		CCBFF5DF30DED459F7FDC99ABA989BE6 /* MBFakerAddress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBFakerAddress.m; path = MBFaker/MBFakerAddress.m; sourceTree = "<group>"; };
+		CE5A22FEE0CA5E133CD3101C6C5A0684 /* NSObject+AutoDescription.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+AutoDescription.m"; path = "WPObjectMapper/NSObject+AutoDescription.m"; sourceTree = "<group>"; };
+		D005ECA381EBF843BA84932C80AE7364 /* WPFaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WPFaker.h; path = WPFaker/WPFaker.h; sourceTree = "<group>"; };
+		D053BFBA935F655B405CB9FED2A2487D /* MBFakerHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBFakerHelper.m; path = MBFaker/MBFakerHelper.m; sourceTree = "<group>"; };
+		D477452BEAE602803E827145964CD6DC /* NSObject+AutoDescription.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+AutoDescription.h"; path = "WPObjectMapper/NSObject+AutoDescription.h"; sourceTree = "<group>"; };
+		D4951515B34B4B2D7FAAFF30C2133B81 /* MBFakerCompany.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBFakerCompany.m; path = MBFaker/MBFakerCompany.m; sourceTree = "<group>"; };
+		D681B72E51B69CE905194FB24C3DB374 /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WPObjectMapperExample-WPObjectMapperExampleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D85068A9663EC9CC594689C8271F758D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		DD3FECCC22DDA446B42AC6777C2E8840 /* RandomNumber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RandomNumber.h; path = WPFaker/RandomNumber.h; sourceTree = "<group>"; };
+		E06D7DBCB62E7CE29402C7618F9643C6 /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WPObjectMapperExample-WPObjectMapperExampleTests.modulemap"; sourceTree = "<group>"; };
+		E1AE2DE49F1D5E195FB4E06AE5FFC3E9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		E221FB5BF23CEF66BB3CA098408D867B /* MBFaker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBFaker-prefix.pch"; sourceTree = "<group>"; };
+		E29BC22F4CEFD9C358F44DDCA4107D68 /* writer.c */ = {isa = PBXFileReference; includeInIndex = 1; name = writer.c; path = "MBFaker/yaml-0.1.3/src/writer.c"; sourceTree = "<group>"; };
+		E8AED26EE2BA7C222646780F8AE14416 /* MBFaker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MBFaker-Info.plist"; sourceTree = "<group>"; };
+		ECDCB402ABA744E3FF83111D7EE610F1 /* WPFaker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WPFaker-prefix.pch"; sourceTree = "<group>"; };
+		EF5FA6ED2BE68106ADF8CEE05010CE93 /* YAMLSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YAMLSerialization.m; path = MBFaker/YAMLSerialization.m; sourceTree = "<group>"; };
+		F44CE39EFC3C9B885EF8094ECC2A6746 /* MBFakerInternet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBFakerInternet.h; path = MBFaker/MBFakerInternet.h; sourceTree = "<group>"; };
+		F639ACF878C6AA60055F8D624FAF1852 /* WPObjectMapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WPObjectMapper.xcconfig; sourceTree = "<group>"; };
+		F9EBCD656E997F70977FF9909DFC4C34 /* Pods_WPObjectMapperExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WPObjectMapperExample.framework; path = "Pods-WPObjectMapperExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA1FB04470DD8D67DC6C2725E0CF203F /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WPObjectMapperExample-WPObjectMapperExampleTests-umbrella.h"; sourceTree = "<group>"; };
+		FBA8A9A8048E760CBDC0E7DF0F26F1C2 /* WPObjectMapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WPObjectMapper-umbrella.h"; sourceTree = "<group>"; };
+		FF93833473A5D99725299A8FA40B250A /* MBFaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBFaker.h; path = MBFaker/MBFaker.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8375C14B701632C584B9A36830405631 /* Frameworks */ = {
+		0FB0C516990B477F020784D0B06DD394 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C6585CFF5EA2720C1C0B49E94F58792 /* Foundation.framework in Frameworks */,
+				1B668114EC25A7E03F79AEBFFCBF616B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		911F2A6694C80F0D4D56A0D4144D4B2C /* Frameworks */ = {
+		756A0CE2F1EA0F5F7D281DD2F34D2C7A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9138DD7C9964DFBD896EBAF06D434DAE /* Foundation.framework in Frameworks */,
+				3FFCD3FABCF8AAA07CD0977493D69581 /* Foundation.framework in Frameworks */,
+				1C0D340F3938EFB27B191B7B321DBE84 /* MBFaker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9159BE734B0B024309454669BE10709E /* Frameworks */ = {
+		7D90BEA04BB23A3BEC3FC4E2FBFE99BF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C22C50A3DD6198AB2F86DA3024A2307E /* Foundation.framework in Frameworks */,
+				B26043AA42903B247AC333303717957B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B0FCC51CC718ABED6E0B24C47961032D /* Frameworks */ = {
+		A2AF3061967817BEC684438BA01C7969 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10F087FBA441B9010246CA5251281C8A /* Foundation.framework in Frameworks */,
-				F9A7A21848B96EC866F3F347EDCAC917 /* MBFaker.framework in Frameworks */,
+				58FFD4068AEC49E09282BFA119AC8BCC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F103EB84FE1C3FA76CF53834403DF815 /* Frameworks */ = {
+		F058B58B29CB2B95E4D30BDAE8233C38 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D359E8B019428CD9DC9D99F6E40CDF94 /* Foundation.framework in Frameworks */,
+				ABA68BB0B27B7D3DCB0FDBB14BAAC29D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		01A69C36F9100BC25BDE626A8ED43BAE /* Support Files */ = {
+		0AF1463D2FF260B3FBB28FC485D12620 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				7DBAA504531D725D5A486A4B584F8AD2 /* Info.plist */,
-				D1FA1B6A5A4282C6557DC2DAE381EFA6 /* MBFaker.modulemap */,
-				F0FA1E4A0339AAFB19C6A90343847289 /* MBFaker.xcconfig */,
-				E9479263C40E38399D11BB37EB0A8405 /* MBFaker-dummy.m */,
-				D5493A35020391B0C9F4A98721847699 /* MBFaker-prefix.pch */,
-				6AA44790AA5B31E09A93BDA5C58A5701 /* MBFaker-umbrella.h */,
+				BD74682838CE686C958832761E8699FC /* Foundation.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/MBFaker";
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		1D6C228EFA1041C70A141F5C646F3E51 /* Resources */ = {
+		0C2DBC5512C99B98DF4709A25903E67C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6CF0E90D678ABD4A10F76B892085A360 /* cs.yml */,
-				9B336438F2387FE8D39A3CDF1D570EC6 /* de.yml */,
-				2C73F2F1AEB44EB235645326EC8349E6 /* en.yml */,
-				24A79C78EB4AF98C51E4B7A781DD479A /* fr.yml */,
-				B098276869AF1FBD887C3D7D127AC467 /* nl.yml */,
-				FF66A6040744C2A85C20530162B1D969 /* pl.yml */,
-				168FE9E2FBEC1C861DC5C66399E04F1F /* ru.yml */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		4762A96E6906D9A8D78B4D9F3563BB22 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4A98F5EC15D9BE7A0ED83127D07B9FBA /* Info.plist */,
-				82D5584F8261D22A3309CE8265C0FE12 /* WPFaker.modulemap */,
-				BC1951EAA9492FA3DBA77BEA021D9EA9 /* WPFaker.xcconfig */,
-				7C38F0002AEAD497345092423071469B /* WPFaker-dummy.m */,
-				C7CF6C7D0221F2B45B406C0FCAF07273 /* WPFaker-prefix.pch */,
-				61EAB07CD8BE5C55EC4A72B9A10566B8 /* WPFaker-umbrella.h */,
+				4C6A3D0164BFA7C70FB0354E8D66451C /* WPFaker.modulemap */,
+				CADA8DDAC6DD6BA269EC2C3435288223 /* WPFaker.xcconfig */,
+				94C0CF18E3400E581CFA79D1330EA0C9 /* WPFaker-dummy.m */,
+				6EB7D5870600029A7C4ACAE22A4FBF6A /* WPFaker-Info.plist */,
+				ECDCB402ABA744E3FF83111D7EE610F1 /* WPFaker-prefix.pch */,
+				BABB350D47CDC6BC3D069AD57EC670A4 /* WPFaker-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/WPFaker";
 			sourceTree = "<group>";
 		};
-		67152D2E1BE7BE5CB2DE1EC85F69E8A9 /* iOS */ = {
+		14A90FA407CA57C15F596474730CCF42 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9BD4961CD0ED74DFC496F7EEEBBC64CB /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		74C8DE1B008360E227B071FD30B530C1 /* WPFaker */ = {
-			isa = PBXGroup;
-			children = (
-				AFE3EE25FFF051F614F9C9C31B523506 /* Dates.h */,
-				6F492B5CF086F5580AA0373B543323AC /* Dates.m */,
-				613F8E33555588F69F89D63EFFC90756 /* RandomNumber.h */,
-				756BE0F4C8FBF125DEC40287E91C4BFD /* RandomNumber.m */,
-				6FA46F4A0826E18FC7BD2CA1B1D5E04F /* WPFaker.h */,
-				68DF0F76BD90A00AFDFB953678832BD9 /* WPFaker.m */,
-				BF269AC25E17A100F5216F145F306DB9 /* WPFakerDate.h */,
-				90430D9C33A7ED5A8E45E3DC266C9FA9 /* WPFakerDate.m */,
-				57F255DA559B14DEEC2EE758068E4E53 /* WPFakerNumber.h */,
-				8F2B31099D1CA11EBB2A54E5E84E8BCD /* WPFakerNumber.m */,
-				4762A96E6906D9A8D78B4D9F3563BB22 /* Support Files */,
-			);
-			name = WPFaker;
-			path = WPFaker;
-			sourceTree = "<group>";
-		};
-		7716B96A495A73E306CDC822D2AD856E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8BD0A15D9DF54CF5CAB3C3A1F364C4D2 /* MBFaker.framework */,
-				E010CA8BC7861E9536DA84EFF1DC0E6E /* Pods_WPObjectMapperExample.framework */,
-				A5D6DD5FE8DBB7BDD822C2A5101681DF /* Pods_WPObjectMapperExample_WPObjectMapperExampleTests.framework */,
-				F6AC7BBBC1F9E3915DA2E295E707577B /* WPFaker.framework */,
-				E1B379D5C8E76F28E9ABBCFB134F46F3 /* WPObjectMapper.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		7C21933356898C95FE7BA942356CFAA4 /* WPObjectMapper */ = {
-			isa = PBXGroup;
-			children = (
-				F0485D09AB5CAB4CB856B3BBE0E8872A /* NSObject+AutoDescription.h */,
-				E30F619D385423D558DF83971E6EB02C /* NSObject+AutoDescription.m */,
-				FB8DB9BC3300998DD006C0C2F990935D /* NSObject+ObjectMap.h */,
-				C61C3C3905340FD80B6DF162328EFA05 /* NSObject+ObjectMap.m */,
-				E70C09EB7807976960A20AF53BBAF89C /* NSString+Inflections.h */,
-				BCD8F27A687E0F3D84037D4AE4619AB0 /* NSString+Inflections.m */,
-				D9085023F02CE200A47BFE11B5CA219B /* Support Files */,
-			);
-			name = WPObjectMapper;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				FED0ECF4A4D1A5C5914FC2118D7182BD /* Development Pods */,
-				9AD5DD237076FEB61A332BB4FCE8E17F /* Frameworks */,
-				96BE98B02555479FB512965ADE0102B6 /* Pods */,
-				7716B96A495A73E306CDC822D2AD856E /* Products */,
-				D9A01D84BBF716B8FF8FCE600F1BC332 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		7E2D7AB803E15C299775E9B3FE330026 /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				9459BAAF6716749F67BF92160F0367C3 /* Info.plist */,
-				8DC22D1F5BE85F03E65EC2FD36EEEE79 /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests.modulemap */,
-				576FA97A0296655975461A0A09F07559 /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests-acknowledgements.markdown */,
-				D2C6F1EE719C2B7CE87BCABDA0CEBBFF /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests-acknowledgements.plist */,
-				FC097607BC97C4C2600342FEEB4A87BB /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests-dummy.m */,
-				0FDF8F214FB7C22D28E5E5FCD5B4DF5D /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests-frameworks.sh */,
-				AA178B5ACDAB3D8FA54153DE5FDEEE78 /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests-resources.sh */,
-				E90FF0CA48E948617E12A82DF53A2E9B /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests-umbrella.h */,
-				2696F500591222CFF60D979C1C1E2ADF /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests.debug.xcconfig */,
-				AA2A09114F7EFC0B66BBE36E99614747 /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests.release.xcconfig */,
-			);
-			name = "Pods-WPObjectMapperExample-WPObjectMapperExampleTests";
-			path = "Target Support Files/Pods-WPObjectMapperExample-WPObjectMapperExampleTests";
-			sourceTree = "<group>";
-		};
-		96BE98B02555479FB512965ADE0102B6 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F300998049460AC64F6AAF2085F2B022 /* MBFaker */,
-				74C8DE1B008360E227B071FD30B530C1 /* WPFaker */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		9AD5DD237076FEB61A332BB4FCE8E17F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				99611005FABD30C2E2812B23654AB7A9 /* MBFaker.framework */,
-				67152D2E1BE7BE5CB2DE1EC85F69E8A9 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C948B8B9A8BE3822720737564CC68523 /* Pods-WPObjectMapperExample */ = {
-			isa = PBXGroup;
-			children = (
-				DD78B2A23C422210E7D753E3BF446E4B /* Info.plist */,
-				5A4C4F19624F77EF35E868103C06B6A8 /* Pods-WPObjectMapperExample.modulemap */,
-				217CCD18336B0790379AE14F6815833D /* Pods-WPObjectMapperExample-acknowledgements.markdown */,
-				78D759B3375CE055DE5671A08300E3AD /* Pods-WPObjectMapperExample-acknowledgements.plist */,
-				A9499647F25CDCA11A1435C5155C9D9F /* Pods-WPObjectMapperExample-dummy.m */,
-				9C6535169975720C0E7F58706D7652BA /* Pods-WPObjectMapperExample-frameworks.sh */,
-				C67110238A724DA96A00F10BA9C2500E /* Pods-WPObjectMapperExample-resources.sh */,
-				1336D9CD829D91C7321B90643B8BEF76 /* Pods-WPObjectMapperExample-umbrella.h */,
-				4D1615447D4F7F582D3525987056AE53 /* Pods-WPObjectMapperExample.debug.xcconfig */,
-				40178092720974AE172440007A9568AA /* Pods-WPObjectMapperExample.release.xcconfig */,
-			);
-			name = "Pods-WPObjectMapperExample";
-			path = "Target Support Files/Pods-WPObjectMapperExample";
-			sourceTree = "<group>";
-		};
-		D9085023F02CE200A47BFE11B5CA219B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5C623198E074FEB54B7518BB667BC55C /* Info.plist */,
-				13AA486DB70406D94FF77AD159306438 /* WPObjectMapper.modulemap */,
-				BE97CF1E04E8B80BDEB806A2EF5F2B6F /* WPObjectMapper.xcconfig */,
-				F3FC30334469EA39C38CA6724B23EF82 /* WPObjectMapper-dummy.m */,
-				EEAB60143B40D7E567D4C9DDF8C12279 /* WPObjectMapper-prefix.pch */,
-				6E90591ABF7C23874CE8236796F4FC69 /* WPObjectMapper-umbrella.h */,
+				4CB54C3F2A194B72EB9377D9FA951D27 /* MBFaker.modulemap */,
+				BE91C142037B00564C0A6358C7B94753 /* MBFaker.xcconfig */,
+				B86B1C53EAE6BC43CF7F34D1D1BA2EA6 /* MBFaker-dummy.m */,
+				E8AED26EE2BA7C222646780F8AE14416 /* MBFaker-Info.plist */,
+				E221FB5BF23CEF66BB3CA098408D867B /* MBFaker-prefix.pch */,
+				5E8E7B9A098DBDD2E94A5F9E90A01D5E /* MBFaker-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "WPObjectMapperExample/Pods/Target Support Files/WPObjectMapper";
+			path = "../Target Support Files/MBFaker";
 			sourceTree = "<group>";
 		};
-		D9A01D84BBF716B8FF8FCE600F1BC332 /* Targets Support Files */ = {
+		2D8FDFB1C48D34469358E45E0CC9FF80 /* MBFaker */ = {
 			isa = PBXGroup;
 			children = (
-				C948B8B9A8BE3822720737564CC68523 /* Pods-WPObjectMapperExample */,
-				7E2D7AB803E15C299775E9B3FE330026 /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		F300998049460AC64F6AAF2085F2B022 /* MBFaker */ = {
-			isa = PBXGroup;
-			children = (
-				3EF105F32BCA548456C391667247AB93 /* api.c */,
-				A0921E2265D7B943D7510B74A78583B8 /* config.h */,
-				164228282B6317780A009982DC739DFF /* dumper.c */,
-				679763EB572D41276FED5D2D60A38EB9 /* emitter.c */,
-				40D172F6F45D8ED344C10A8C96DA5A9D /* loader.c */,
-				B3906F4ED1BDE3188779BD0C535F380F /* MBFaker.h */,
-				D9E16D9DA939A6EA14E60BAE07F5146D /* MBFaker.m */,
-				42CCA3579F35E24245F1A32EAD7C3E04 /* MBFakerAddress.h */,
-				28E416E0A3EE24ABD70D2C21F23606EC /* MBFakerAddress.m */,
-				A2B7EB01D3A2469A48E09E15785921CD /* MBFakerCompany.h */,
-				462653DFBEE5CAC9972DB30D86856A53 /* MBFakerCompany.m */,
-				3567D9588706A1B6562E66F5088F59A8 /* MBFakerHelper.h */,
-				FB47F30E7286004444F21F31EBE7CC78 /* MBFakerHelper.m */,
-				100D678890528002541423E2C06E6B0E /* MBFakerInternet.h */,
-				47B71F805E6B9E6803890D63E71C1DC8 /* MBFakerInternet.m */,
-				D6263A34F6721066384DF8741D6FBBF7 /* MBFakerLorem.h */,
-				E72B5C5E81313ECC8C82A017252B44A1 /* MBFakerLorem.m */,
-				BCF4C5CDE12E2A8243C0165F8EC84BF0 /* MBFakerName.h */,
-				A9233582B6CB0B874E79F8C2E920878F /* MBFakerName.m */,
-				2DD76716A33D1F9BEC6F95F18FECE7DB /* MBFakerPhoneNumber.h */,
-				EC8D0396E71C2233DD530FD8AF1762B4 /* MBFakerPhoneNumber.m */,
-				13F455A991C38AA3ACA707523C09F773 /* parser.c */,
-				EE7DFE5CE23989B1895244E53B381FA9 /* reader.c */,
-				2DB0D516F9AD9DF77403277A5A05E5DC /* scanner.c */,
-				4B3E15C4500865A3B64BE4203B1DD800 /* writer.c */,
-				5FC5FAEE2067F51429654106B4494F11 /* yaml.h */,
-				1925AB5F8F30ED07AC1280F0CE7A7DE4 /* yaml_private.h */,
-				3515A8747C794BB2A0159E83785FA860 /* YAMLSerialization.h */,
-				F5D8A37F2709588AE3920080C2F0A5AF /* YAMLSerialization.m */,
-				1D6C228EFA1041C70A141F5C646F3E51 /* Resources */,
-				01A69C36F9100BC25BDE626A8ED43BAE /* Support Files */,
+				94213F0D9EA17FB67D40013CE580C014 /* api.c */,
+				B7252405C3CAC401A504FDD68B1DBF4D /* config.h */,
+				85CA52EC93102DA7562920D1BAB1B9FF /* dumper.c */,
+				A8B85F19BF8264ED41E140199A9659A7 /* emitter.c */,
+				57CD451E68E17F21B4C3067C6F838E91 /* loader.c */,
+				FF93833473A5D99725299A8FA40B250A /* MBFaker.h */,
+				C6174A23C603F4AB0556D113C2EF55CE /* MBFaker.m */,
+				6C13BCAA0D6D059F9A339996C59DDBDC /* MBFakerAddress.h */,
+				CCBFF5DF30DED459F7FDC99ABA989BE6 /* MBFakerAddress.m */,
+				AC7000CAAC974C9C265519F45AD38F3B /* MBFakerCompany.h */,
+				D4951515B34B4B2D7FAAFF30C2133B81 /* MBFakerCompany.m */,
+				7B1082962355A456FCBE18BA64747C54 /* MBFakerHelper.h */,
+				D053BFBA935F655B405CB9FED2A2487D /* MBFakerHelper.m */,
+				F44CE39EFC3C9B885EF8094ECC2A6746 /* MBFakerInternet.h */,
+				6389F5BFBB6495833A4CBDA17B18C7AE /* MBFakerInternet.m */,
+				5DE0E820BFBBFDFFFC18930ABEB2979E /* MBFakerLorem.h */,
+				84A351AB6D86DE2C04AC9A4DA08A525D /* MBFakerLorem.m */,
+				06D13131F8139774C84FAF441BD6B85D /* MBFakerName.h */,
+				AE35420F471022E21848AAF44B50A631 /* MBFakerName.m */,
+				3A8EA7C68F39E94275AE10FDBF964302 /* MBFakerPhoneNumber.h */,
+				4B241D45D34675DBF845330884B369DF /* MBFakerPhoneNumber.m */,
+				08EF21FEA0C5E543A447C933D5C8D883 /* parser.c */,
+				315BC1A79707A8AEC2118354E0147276 /* reader.c */,
+				04BDFEA13468DD18430D6893850260FC /* scanner.c */,
+				E29BC22F4CEFD9C358F44DDCA4107D68 /* writer.c */,
+				49405D6D5AE8C6DEC78347133C888F90 /* yaml.h */,
+				02B42E8656B1508CD764EB88A178C2D4 /* yaml_private.h */,
+				6616F259C3FDCF689FF4D119ED949F6F /* YAMLSerialization.h */,
+				EF5FA6ED2BE68106ADF8CEE05010CE93 /* YAMLSerialization.m */,
+				77E54513F86C9CADA3C1AAA578A27B97 /* Resources */,
+				14A90FA407CA57C15F596474730CCF42 /* Support Files */,
 			);
 			name = MBFaker;
 			path = MBFaker;
 			sourceTree = "<group>";
 		};
-		FED0ECF4A4D1A5C5914FC2118D7182BD /* Development Pods */ = {
+		2FD122CA3C7679CC773D37DAD4BAB8B5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7C21933356898C95FE7BA942356CFAA4 /* WPObjectMapper */,
+				58F04391626B658BA19C8FA82CD7FBAB /* MBFaker.framework */,
+				0AF1463D2FF260B3FBB28FC485D12620 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54697C940DA77869AA2DF6807949760B /* Pods-WPObjectMapperExample */ = {
+			isa = PBXGroup;
+			children = (
+				5F1E9BB095670DC9D0070A1FB11DC482 /* Pods-WPObjectMapperExample.modulemap */,
+				A7AD71E7DB8BFA3F0A0E3D716ECCDEFD /* Pods-WPObjectMapperExample-acknowledgements.markdown */,
+				4730A99E863718013882CE209A0F334C /* Pods-WPObjectMapperExample-acknowledgements.plist */,
+				0032F812F01C996BA2FBDFC51BF573B1 /* Pods-WPObjectMapperExample-dummy.m */,
+				445A4365646D3D2E06608C8452EDF004 /* Pods-WPObjectMapperExample-frameworks.sh */,
+				95CC1704738EF8951C553F8AFA05E9F2 /* Pods-WPObjectMapperExample-Info.plist */,
+				3EAE9CD149724493FF2917575B1122BA /* Pods-WPObjectMapperExample-umbrella.h */,
+				B758AAF1E7ED4BC60EF9B1F09A2609B7 /* Pods-WPObjectMapperExample.debug.xcconfig */,
+				317CCA19CAFEA722EA38C76EE04B588F /* Pods-WPObjectMapperExample.release.xcconfig */,
+			);
+			name = "Pods-WPObjectMapperExample";
+			path = "Target Support Files/Pods-WPObjectMapperExample";
+			sourceTree = "<group>";
+		};
+		5C9D8C5353F73B68B63FF7A57DE14F34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E73714740700DC2ABB2FBF66081832F /* MBFaker.framework */,
+				F9EBCD656E997F70977FF9909DFC4C34 /* Pods_WPObjectMapperExample.framework */,
+				B92C1AC592AEA1469C3CEF3F59392E8A /* Pods_WPObjectMapperExample_WPObjectMapperExampleTests.framework */,
+				051D6A0F9211DCA890191C501989264B /* WPFaker.framework */,
+				A8D2E11F53EB37F2B56FBD375BC9D7E3 /* WPObjectMapper.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		713ABF58F1752176EABDF3CB87150D82 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				370992D2879ADDE994FF0E4DE2037D29 /* WPObjectMapper.modulemap */,
+				F639ACF878C6AA60055F8D624FAF1852 /* WPObjectMapper.xcconfig */,
+				C629C0147404B6F560D25C3A0E5BC627 /* WPObjectMapper-dummy.m */,
+				4250CE56AE03587D6D2B6514EF0EEC48 /* WPObjectMapper-Info.plist */,
+				8FE32DE4915B9CD1EB1904A0C809CC70 /* WPObjectMapper-prefix.pch */,
+				FBA8A9A8048E760CBDC0E7DF0F26F1C2 /* WPObjectMapper-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "WPObjectMapperExample/Pods/Target Support Files/WPObjectMapper";
+			sourceTree = "<group>";
+		};
+		740ADEF2AF53A3DE297A713BB26BD802 /* WPObjectMapper */ = {
+			isa = PBXGroup;
+			children = (
+				D477452BEAE602803E827145964CD6DC /* NSObject+AutoDescription.h */,
+				CE5A22FEE0CA5E133CD3101C6C5A0684 /* NSObject+AutoDescription.m */,
+				2B97556C8B1F5D006CCD90EDEC842B59 /* NSObject+ObjectMap.h */,
+				BC9917E87DC183F3B55DFB4AA3374EB9 /* NSObject+ObjectMap.m */,
+				BE55995817E4B0CD5D174F6C567EB46E /* NSString+Inflections.h */,
+				89BF6FA5D2B9CFB74DA914408EC54D40 /* NSString+Inflections.m */,
+				BF06EB25E7F3B058661FEF338456AAE9 /* Pod */,
+				713ABF58F1752176EABDF3CB87150D82 /* Support Files */,
+			);
+			name = WPObjectMapper;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		77E54513F86C9CADA3C1AAA578A27B97 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				53E0C9224CD199FF6B0078F1F23AE06B /* cs.yml */,
+				6F6DA1582A5A0F1505A194E5FAA0F414 /* de.yml */,
+				2B3D14BDCC943F5638EC94DB6AD94CD5 /* en.yml */,
+				C6E19BD2F3CD311543E89516F99EA638 /* fr.yml */,
+				98572332C344DB9B228954420FE8999A /* nl.yml */,
+				6DAD7C3E0186C0F6AC3391189BD2ED39 /* pl.yml */,
+				73AFEEC420DEA363A0B17913952BA708 /* ru.yml */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BF06EB25E7F3B058661FEF338456AAE9 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				E1AE2DE49F1D5E195FB4E06AE5FFC3E9 /* LICENSE */,
+				D85068A9663EC9CC594689C8271F758D /* README.md */,
+				7CA1D4A5A1727B5FB2FB307FB02EE04F /* WPObjectMapper.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		CC00ED9FE5467C93E873FADC23EE585A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				54697C940DA77869AA2DF6807949760B /* Pods-WPObjectMapperExample */,
+				D92AC3D123480379359B2680CFBAB2DC /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				F2E47A47C2BB9278820EA4F9E46D624C /* Development Pods */,
+				2FD122CA3C7679CC773D37DAD4BAB8B5 /* Frameworks */,
+				EB510D41EB6A07B73B694458B0043D03 /* Pods */,
+				5C9D8C5353F73B68B63FF7A57DE14F34 /* Products */,
+				CC00ED9FE5467C93E873FADC23EE585A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D92AC3D123480379359B2680CFBAB2DC /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				E06D7DBCB62E7CE29402C7618F9643C6 /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests.modulemap */,
+				D681B72E51B69CE905194FB24C3DB374 /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests-acknowledgements.markdown */,
+				020FC413CAC2AE35A7FA4AD4471994CA /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests-acknowledgements.plist */,
+				457BB5F5648C361DB411D46254F9F3FE /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests-dummy.m */,
+				A54E1F966075ED959B748B382807436F /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests-frameworks.sh */,
+				7FB419E0F76C7E251DB8A20711454830 /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests-Info.plist */,
+				FA1FB04470DD8D67DC6C2725E0CF203F /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests-umbrella.h */,
+				7E87FEA13E4A2D745F72D0ED0172B320 /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests.debug.xcconfig */,
+				25FD7D1127C32B2EE5977201CF23B18F /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests.release.xcconfig */,
+			);
+			name = "Pods-WPObjectMapperExample-WPObjectMapperExampleTests";
+			path = "Target Support Files/Pods-WPObjectMapperExample-WPObjectMapperExampleTests";
+			sourceTree = "<group>";
+		};
+		DBC0E247AD3B28BC127078CEA3C9AA6B /* WPFaker */ = {
+			isa = PBXGroup;
+			children = (
+				A653C8753B0F32AD45869C6BA54C3EE8 /* Dates.h */,
+				77371C0323F6B51EE7801408C5F22814 /* Dates.m */,
+				DD3FECCC22DDA446B42AC6777C2E8840 /* RandomNumber.h */,
+				4900A90F4190784EE4A477DCDA7E55DC /* RandomNumber.m */,
+				D005ECA381EBF843BA84932C80AE7364 /* WPFaker.h */,
+				5810546D29D956C93B03E30963210BE8 /* WPFaker.m */,
+				A9CD3EA6A9955C24891F3BBB2BF9C6BA /* WPFakerDate.h */,
+				BA6DB5A48539B556E7F76A0802D2A73B /* WPFakerDate.m */,
+				7D53FD9E2639A74EE4B8A7B9CCCDB210 /* WPFakerNumber.h */,
+				08ED2DFEE887A6EB6522A8CDAA2EA2AA /* WPFakerNumber.m */,
+				0C2DBC5512C99B98DF4709A25903E67C /* Support Files */,
+			);
+			name = WPFaker;
+			path = WPFaker;
+			sourceTree = "<group>";
+		};
+		EB510D41EB6A07B73B694458B0043D03 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D8FDFB1C48D34469358E45E0CC9FF80 /* MBFaker */,
+				DBC0E247AD3B28BC127078CEA3C9AA6B /* WPFaker */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F2E47A47C2BB9278820EA4F9E46D624C /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				740ADEF2AF53A3DE297A713BB26BD802 /* WPObjectMapper */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -510,112 +520,138 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		8DA17186D1332D018BCF6872B9E56D36 /* Headers */ = {
+		39FD13D3AD73195A7D00DCF690395C8E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E52F6DA77D349193CA5FBFCED0198954 /* Pods-WPObjectMapperExample-umbrella.h in Headers */,
+				A648B7CE12CAC386CBBAE730733E4234 /* Pods-WPObjectMapperExample-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B9050715E8DA9A6D1F3BF1294EE3044A /* Headers */ = {
+		74BDE4840EFD16558B2DC822E0A89A23 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B652906D2363EDA79EC83F799B76B35 /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests-umbrella.h in Headers */,
+				A158E344F13665D9407C5EE02A5B9A3A /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D663B2B454B77FFE3221238E4C1A8121 /* Headers */ = {
+		CDC06A6EA7669660AA77A19DA0F85DAA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A2B2536C1CD94F6E6969F156F4518FF /* NSObject+AutoDescription.h in Headers */,
-				C7E6C45EBB1089242056F68384B32F39 /* NSObject+ObjectMap.h in Headers */,
-				BB4EBCB55F83BF115F1F3E898FAC1AF1 /* NSString+Inflections.h in Headers */,
-				67195CE1318C2EF647921C7EB1E4E6C0 /* WPObjectMapper-umbrella.h in Headers */,
+				186F79632B07F8ED2CA25C901B357F49 /* NSObject+AutoDescription.h in Headers */,
+				A2222AC808273898D71BD0D201E44589 /* NSObject+ObjectMap.h in Headers */,
+				19EB56B6355F31F5D26DD099C028E746 /* NSString+Inflections.h in Headers */,
+				157B752A410BB831ADC24F6D41FE2ABE /* WPObjectMapper-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D8E85C7526882621F759CBA76DCB0C99 /* Headers */ = {
+		CE917CDB623A1F2C261B21C6C8F1C03A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D24B11CFA9539ED1564C332BA9D7FDA6 /* config.h in Headers */,
-				24F40A8AD8D035FAB45F141078887CB9 /* MBFaker-umbrella.h in Headers */,
-				5230CDE9E66E61187BDB4E89A614D9C4 /* MBFaker.h in Headers */,
-				BA7561915A1B4C7EE863A55DD6A5E03C /* MBFakerAddress.h in Headers */,
-				14E839E25DE326161186BD6A52A43B23 /* MBFakerCompany.h in Headers */,
-				1C35F6D954332391B2B06A2709540E7E /* MBFakerHelper.h in Headers */,
-				14AADCDC5AD2A40D3709B8F8FC75AAB3 /* MBFakerInternet.h in Headers */,
-				C5A265704C62ECB4BB4113158A3FB5EB /* MBFakerLorem.h in Headers */,
-				79EE4BB89E8CF6E4ACA1ECA9ABD2C400 /* MBFakerName.h in Headers */,
-				D2FE0D0CEADF1DA93D197791C190908A /* MBFakerPhoneNumber.h in Headers */,
-				E177CE7321720B0FC31BF3ACF159EFE4 /* yaml.h in Headers */,
-				28B48DAFA520E4F4B5FB891BF859A20A /* yaml_private.h in Headers */,
-				A7C6D1CF6F077ED6CF5662DFFC79E2E1 /* YAMLSerialization.h in Headers */,
+				51E003287063571E7E8B0267E2AFAB36 /* Dates.h in Headers */,
+				1FE67904893F44A446F7C4309D1CCE4A /* RandomNumber.h in Headers */,
+				A87DD0552A9D844C959A66F5CBDD26F0 /* WPFaker-umbrella.h in Headers */,
+				B21504D6DE14E93771EFA844E0DF0B65 /* WPFaker.h in Headers */,
+				8E212979AEC8D7D7D1CC7D6128824004 /* WPFakerDate.h in Headers */,
+				C847FD3CF1379965C4199FF25265345B /* WPFakerNumber.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7D04F8546C8CFD2FB6FC42EEA5B3933 /* Headers */ = {
+		FDB75ED5316891AA4F47A656BC754451 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0D4828DF91078F91C09240D489CCBAB /* Dates.h in Headers */,
-				BF23D6C47A667CC3777632555732F2A8 /* RandomNumber.h in Headers */,
-				A06EC4923A22F8A5FDFCC54D67F98A58 /* WPFaker-umbrella.h in Headers */,
-				A2B065765D8E83C989F86165070C640C /* WPFaker.h in Headers */,
-				FE2ED71935FCC5A967331C355ABD2537 /* WPFakerDate.h in Headers */,
-				FDD9750A7A178CC36B77A9CD8E7B67AC /* WPFakerNumber.h in Headers */,
+				801FFA515D541BE2F5B7EF1D4F2412E3 /* config.h in Headers */,
+				402B029A91B83C8FBE7776E2FAF8651B /* MBFaker-umbrella.h in Headers */,
+				F5400596147A41C3BECDFF6C6463330F /* MBFaker.h in Headers */,
+				F15C5FBD690FEE3B027B049B88143754 /* MBFakerAddress.h in Headers */,
+				F4149C3E048CB92F33FAF5F022460486 /* MBFakerCompany.h in Headers */,
+				45A14B2209F3C6C511327EB81B282625 /* MBFakerHelper.h in Headers */,
+				B40DD404ED7CD788FD55D62CF2877473 /* MBFakerInternet.h in Headers */,
+				C75C15925AAC7440415B63BD18BECF83 /* MBFakerLorem.h in Headers */,
+				04260FA016CF53996624B2AF98E37DF9 /* MBFakerName.h in Headers */,
+				0CEC2FED945FFCA68D954E3B8D49C5B7 /* MBFakerPhoneNumber.h in Headers */,
+				2B822D684A674B8CB61373AA5502B727 /* yaml.h in Headers */,
+				95490B8704420EFDC9D65210C7603CEF /* yaml_private.h in Headers */,
+				571ED23A16ED54DC759564BA0E88F5DB /* YAMLSerialization.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1557DFA128ED45CE997AFCE2D1D04293 /* WPFaker */ = {
+		159EC8181BE753993DEB895251FA6F67 /* WPFaker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8D09AD7C39E226937C6CF55682A0D414 /* Build configuration list for PBXNativeTarget "WPFaker" */;
+			buildConfigurationList = 09D54D3C9B11D6736D8B0E16CAE3C4F2 /* Build configuration list for PBXNativeTarget "WPFaker" */;
 			buildPhases = (
-				7DCB8B6E01F66DC561F80CC2A1460322 /* Sources */,
-				B0FCC51CC718ABED6E0B24C47961032D /* Frameworks */,
-				F7D04F8546C8CFD2FB6FC42EEA5B3933 /* Headers */,
+				CE917CDB623A1F2C261B21C6C8F1C03A /* Headers */,
+				757C135EA60DC067822B0CD7496443AE /* Sources */,
+				756A0CE2F1EA0F5F7D281DD2F34D2C7A /* Frameworks */,
+				B5ED6A6296E922D04547CF9F1A8BBB67 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				940F6927F0CAEB160B054DC50C1EC0A4 /* PBXTargetDependency */,
+				C31E0E7E9857C3BFC04D78DA90DAA0F8 /* PBXTargetDependency */,
 			);
 			name = WPFaker;
 			productName = WPFaker;
-			productReference = F6AC7BBBC1F9E3915DA2E295E707577B /* WPFaker.framework */;
+			productReference = 051D6A0F9211DCA890191C501989264B /* WPFaker.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		194A5A3C9A61468A27C9E87500AEBB73 /* MBFaker */ = {
+		2F1AD5884D660C4B7DF70905EEE8BFE3 /* Pods-WPObjectMapperExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 079B04CA3C4CDD858E525977F105241B /* Build configuration list for PBXNativeTarget "MBFaker" */;
+			buildConfigurationList = BFDA8BE6590D9FD13998FE35C327ED32 /* Build configuration list for PBXNativeTarget "Pods-WPObjectMapperExample" */;
 			buildPhases = (
-				D79A706A8B041558F7CDD2AF550FB5DC /* Sources */,
-				911F2A6694C80F0D4D56A0D4144D4B2C /* Frameworks */,
-				D8E85C7526882621F759CBA76DCB0C99 /* Headers */,
-				120E2D003CF339B4ACFAF6F1724F321E /* Resources */,
+				39FD13D3AD73195A7D00DCF690395C8E /* Headers */,
+				59741CD1B70D66CC9798FD04814C975E /* Sources */,
+				0FB0C516990B477F020784D0B06DD394 /* Frameworks */,
+				58E79B81BFBE47A67881E68A1D1A58FD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4F50229B4292D81CDCECA255D62A314C /* PBXTargetDependency */,
+				C8ADEE01AAE3280CF7124FC99F3F35CB /* PBXTargetDependency */,
+				35005D4D52DDEF0BBC36F10A7DBF49F8 /* PBXTargetDependency */,
 			);
-			name = MBFaker;
-			productName = MBFaker;
-			productReference = 8BD0A15D9DF54CF5CAB3C3A1F364C4D2 /* MBFaker.framework */;
+			name = "Pods-WPObjectMapperExample";
+			productName = "Pods-WPObjectMapperExample";
+			productReference = F9EBCD656E997F70977FF9909DFC4C34 /* Pods_WPObjectMapperExample.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		506B68F64792CF0A32F1F8564B46CB01 /* WPObjectMapper */ = {
+		590DB811912BDB5B499C64DAF8F68FA7 /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8B7701084A499271755A99E372CF0E8D /* Build configuration list for PBXNativeTarget "WPObjectMapper" */;
+			buildConfigurationList = 5186E64F3107B3A31BB56BCA1DC23511 /* Build configuration list for PBXNativeTarget "Pods-WPObjectMapperExample-WPObjectMapperExampleTests" */;
 			buildPhases = (
-				F88C7F4020FCCC457A9AF0CFE2DFDAE9 /* Sources */,
-				8375C14B701632C584B9A36830405631 /* Frameworks */,
-				D663B2B454B77FFE3221238E4C1A8121 /* Headers */,
+				74BDE4840EFD16558B2DC822E0A89A23 /* Headers */,
+				3012654B55F9AB02009B3FD1DA9BA14F /* Sources */,
+				F058B58B29CB2B95E4D30BDAE8233C38 /* Frameworks */,
+				1B54ED849C4F7535D672887C635DB740 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E371D1CE296F5749DC70E55176A9795D /* PBXTargetDependency */,
+				C02F7D0F3C8F6A43D3756DBD185D93E6 /* PBXTargetDependency */,
+				DF72ABC11FC6E1644A807CA7EA55582A /* PBXTargetDependency */,
+			);
+			name = "Pods-WPObjectMapperExample-WPObjectMapperExampleTests";
+			productName = "Pods-WPObjectMapperExample-WPObjectMapperExampleTests";
+			productReference = B92C1AC592AEA1469C3CEF3F59392E8A /* Pods_WPObjectMapperExample_WPObjectMapperExampleTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		956E479B45B1E09D0CA57F6FA28B3DE6 /* WPObjectMapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32CE208A42613222FFDBD06D576DD455 /* Build configuration list for PBXNativeTarget "WPObjectMapper" */;
+			buildPhases = (
+				CDC06A6EA7669660AA77A19DA0F85DAA /* Headers */,
+				5B82C6461762E3B6C9E96417ABCC085E /* Sources */,
+				7D90BEA04BB23A3BEC3FC4E2FBFE99BF /* Frameworks */,
+				2BE9CD4CB8648537132620723D6E0D8D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -623,361 +659,217 @@
 			);
 			name = WPObjectMapper;
 			productName = WPObjectMapper;
-			productReference = E1B379D5C8E76F28E9ABBCFB134F46F3 /* WPObjectMapper.framework */;
+			productReference = A8D2E11F53EB37F2B56FBD375BC9D7E3 /* WPObjectMapper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		64B8DFEBC9E068B7B3A91A14E3101049 /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests */ = {
+		D55631D2F7513230F0E6116198FF117A /* MBFaker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8C88518CF71E07A8C908BDCE5083E00F /* Build configuration list for PBXNativeTarget "Pods-WPObjectMapperExample-WPObjectMapperExampleTests" */;
+			buildConfigurationList = CA546B8583996AAE3B726BF07FEBF4CA /* Build configuration list for PBXNativeTarget "MBFaker" */;
 			buildPhases = (
-				D2BA56846144582C3B3575CECF0D8459 /* Sources */,
-				F103EB84FE1C3FA76CF53834403DF815 /* Frameworks */,
-				B9050715E8DA9A6D1F3BF1294EE3044A /* Headers */,
+				FDB75ED5316891AA4F47A656BC754451 /* Headers */,
+				EF42D93CB4EED19B49005765F595B970 /* Sources */,
+				A2AF3061967817BEC684438BA01C7969 /* Frameworks */,
+				2FE4BF5739CD29A72A39FF8B260A784A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C1A9A42783E1A93171EF38DB7CD180D3 /* PBXTargetDependency */,
-				38EDF6109F21D0E8F5D34D87935368A6 /* PBXTargetDependency */,
-				9FABF7704A93E83C2722F6858F4BEE5B /* PBXTargetDependency */,
 			);
-			name = "Pods-WPObjectMapperExample-WPObjectMapperExampleTests";
-			productName = "Pods-WPObjectMapperExample-WPObjectMapperExampleTests";
-			productReference = A5D6DD5FE8DBB7BDD822C2A5101681DF /* Pods_WPObjectMapperExample_WPObjectMapperExampleTests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		CF27B90C72BCB8440882F4CE599EA7AB /* Pods-WPObjectMapperExample */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DF2F771121DB2E2F48B49D5CEC52DDA9 /* Build configuration list for PBXNativeTarget "Pods-WPObjectMapperExample" */;
-			buildPhases = (
-				948AE644995E727D8FFD69CB2A5E9F20 /* Sources */,
-				9159BE734B0B024309454669BE10709E /* Frameworks */,
-				8DA17186D1332D018BCF6872B9E56D36 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BA1060FF6CE4FFA8CA79F71CD4EACB80 /* PBXTargetDependency */,
-				A84D273E91963717E556B31F9CC10E60 /* PBXTargetDependency */,
-				737E14FE85A6A13791AFD8EB02FA4AF8 /* PBXTargetDependency */,
-			);
-			name = "Pods-WPObjectMapperExample";
-			productName = "Pods-WPObjectMapperExample";
-			productReference = E010CA8BC7861E9536DA84EFF1DC0E6E /* Pods_WPObjectMapperExample.framework */;
+			name = MBFaker;
+			productName = MBFaker;
+			productReference = 6E73714740700DC2ABB2FBF66081832F /* MBFaker.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 7716B96A495A73E306CDC822D2AD856E /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 5C9D8C5353F73B68B63FF7A57DE14F34 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				194A5A3C9A61468A27C9E87500AEBB73 /* MBFaker */,
-				CF27B90C72BCB8440882F4CE599EA7AB /* Pods-WPObjectMapperExample */,
-				64B8DFEBC9E068B7B3A91A14E3101049 /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests */,
-				1557DFA128ED45CE997AFCE2D1D04293 /* WPFaker */,
-				506B68F64792CF0A32F1F8564B46CB01 /* WPObjectMapper */,
+				D55631D2F7513230F0E6116198FF117A /* MBFaker */,
+				2F1AD5884D660C4B7DF70905EEE8BFE3 /* Pods-WPObjectMapperExample */,
+				590DB811912BDB5B499C64DAF8F68FA7 /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests */,
+				159EC8181BE753993DEB895251FA6F67 /* WPFaker */,
+				956E479B45B1E09D0CA57F6FA28B3DE6 /* WPObjectMapper */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		120E2D003CF339B4ACFAF6F1724F321E /* Resources */ = {
+		1B54ED849C4F7535D672887C635DB740 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54CA1A92FC98B580E12D457A594F75B9 /* cs.yml in Resources */,
-				43A527C6D6329727B634175E0B158E04 /* de.yml in Resources */,
-				4A7CA453B14FFEC9D32D92D0D66A0A0F /* en.yml in Resources */,
-				EFE8D6685B300789DC57618C849F1AB3 /* fr.yml in Resources */,
-				393B559078280FE53874F0ED657184C3 /* nl.yml in Resources */,
-				41A3BA822B4567DD2BEA9F25142A59AE /* pl.yml in Resources */,
-				3D2925B5A7485494DD1A819F61CC6F76 /* ru.yml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BE9CD4CB8648537132620723D6E0D8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FE4BF5739CD29A72A39FF8B260A784A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F9283746D8768809681E3E68F66100F /* cs.yml in Resources */,
+				2641BA62A30633CF397D382554919DC5 /* de.yml in Resources */,
+				EEB2D02C28E9E8C673D6813F6F13EA7D /* en.yml in Resources */,
+				D98392AF1DA1BFAE879EC3BAC9DCB859 /* fr.yml in Resources */,
+				17A89770C65A21FF49E7763E1CB5FB61 /* nl.yml in Resources */,
+				2128453242EF22F990671218B3F42C66 /* pl.yml in Resources */,
+				24AD89FBD4F66C509E1D66D471D5B3DA /* ru.yml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58E79B81BFBE47A67881E68A1D1A58FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5ED6A6296E922D04547CF9F1A8BBB67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7DCB8B6E01F66DC561F80CC2A1460322 /* Sources */ = {
+		3012654B55F9AB02009B3FD1DA9BA14F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F356FFC30E91EF3FEF88BE052D5175E8 /* Dates.m in Sources */,
-				A93461DDC58F90B84F180378BA73C735 /* RandomNumber.m in Sources */,
-				81D1F32D88DD7DF8D8D2E7012DB9994C /* WPFaker-dummy.m in Sources */,
-				46EBB7F6EB993F67C3BF396CD8019311 /* WPFaker.m in Sources */,
-				8AA456D18D978483DE6F3A206EEA5C0B /* WPFakerDate.m in Sources */,
-				A71249346C36728AA0C80C8ABE09C289 /* WPFakerNumber.m in Sources */,
+				1156DD1793D751A329A095E1192F815A /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		948AE644995E727D8FFD69CB2A5E9F20 /* Sources */ = {
+		59741CD1B70D66CC9798FD04814C975E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A5CB16050BD6574377EC398A70B4519 /* Pods-WPObjectMapperExample-dummy.m in Sources */,
+				83CEFB3524966AD3BDA1B5A685C19247 /* Pods-WPObjectMapperExample-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D2BA56846144582C3B3575CECF0D8459 /* Sources */ = {
+		5B82C6461762E3B6C9E96417ABCC085E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F197D9D0EB76AD20EFC7E456A315196A /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests-dummy.m in Sources */,
+				2E78803D500BC1F7A1DCB9BF31D6935B /* NSObject+AutoDescription.m in Sources */,
+				B66681D807E420190046EB3D94AEEB7A /* NSObject+ObjectMap.m in Sources */,
+				45C62DDF9CC0630C3A22FC604CB56914 /* NSString+Inflections.m in Sources */,
+				6240BD7DC0DA4840E920C9383DC8712A /* WPObjectMapper-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D79A706A8B041558F7CDD2AF550FB5DC /* Sources */ = {
+		757C135EA60DC067822B0CD7496443AE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD51D4E0CC1AB74E6751B414718F39E5 /* api.c in Sources */,
-				1AA1C52A8BD56A6105F9B5DDFBC8A05B /* dumper.c in Sources */,
-				989A0C44EA11B55913B3966157616125 /* emitter.c in Sources */,
-				252A9D27EC0DC2502E6AB418C6318432 /* loader.c in Sources */,
-				135FCC1FC3E9AFB2B17ED90DAB58A0B8 /* MBFaker-dummy.m in Sources */,
-				8AC1189ABF4CFFC1FF3CA5DFC310E227 /* MBFaker.m in Sources */,
-				FBFB49F23B312E403596EADD2A6F141E /* MBFakerAddress.m in Sources */,
-				94F9DA58435261D480A790FF8D660A72 /* MBFakerCompany.m in Sources */,
-				4ADDED93AB6249080157AB0BBF9B49EC /* MBFakerHelper.m in Sources */,
-				F3E77EA9CE345EB2770F32C45239C6EA /* MBFakerInternet.m in Sources */,
-				DC171F0120C2106CD3EC590A8F5E2D13 /* MBFakerLorem.m in Sources */,
-				CA7F1DBE96CC0FB5760E4FDA3662B424 /* MBFakerName.m in Sources */,
-				E381880584E257D29B61E389ED6E0016 /* MBFakerPhoneNumber.m in Sources */,
-				D1138014CD47506CEB576F2BC7F1503A /* parser.c in Sources */,
-				D55E6669C05E7E02030DA1D90746DEF4 /* reader.c in Sources */,
-				5ED8206019DDDB4CFE137AC3D1DB3B77 /* scanner.c in Sources */,
-				C81ED84437EDDA3D8207ADFA78360264 /* writer.c in Sources */,
-				CD88482A0004E0C33EFA6D7EA9896C79 /* YAMLSerialization.m in Sources */,
+				DDF1C3B369E509346A9ED33FB0BFE529 /* Dates.m in Sources */,
+				85589BCA7B75F3103311BBF194382631 /* RandomNumber.m in Sources */,
+				F96CC368C2A46193A6C39FE7F8721036 /* WPFaker-dummy.m in Sources */,
+				B87E0AEEE266321E267FCDB2727B0D33 /* WPFaker.m in Sources */,
+				AFC25F669057E8E3DB586006DD445826 /* WPFakerDate.m in Sources */,
+				B2143C67EF439D5376C30702C6461AA7 /* WPFakerNumber.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F88C7F4020FCCC457A9AF0CFE2DFDAE9 /* Sources */ = {
+		EF42D93CB4EED19B49005765F595B970 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2986534C7CEB74E920560DD03F02BCFE /* NSObject+AutoDescription.m in Sources */,
-				6BA4AC99C7F07836DC2D8A6C17C702D6 /* NSObject+ObjectMap.m in Sources */,
-				5FB4CE040DD41D84EF4251295F6D0C5E /* NSString+Inflections.m in Sources */,
-				BAB303204BBDC980934C32C29CC9885B /* WPObjectMapper-dummy.m in Sources */,
+				90760181DBAFC109538EB6DAB14A726D /* api.c in Sources */,
+				D4A61E7A7C9428A644CF994E0A9823B9 /* dumper.c in Sources */,
+				DEB55853885A09EDB482177525E40EAB /* emitter.c in Sources */,
+				D58BF971F8D48F8A2462D912E5E67551 /* loader.c in Sources */,
+				88DC159B5F2067F1032BA7BE9C362559 /* MBFaker-dummy.m in Sources */,
+				FE00C1D7A05F9F511623B6FACA594AC1 /* MBFaker.m in Sources */,
+				37B9392F029E84D3AA1EC1F4F2F21C3E /* MBFakerAddress.m in Sources */,
+				4CB18606ED002A2A3A2EDD3A45E84C04 /* MBFakerCompany.m in Sources */,
+				41251174C4536C9A20E01E1787386028 /* MBFakerHelper.m in Sources */,
+				B71C8A16D1AD506F580AB179EFE1D11D /* MBFakerInternet.m in Sources */,
+				B7F35F5BC4055954D2EA52EA677385B2 /* MBFakerLorem.m in Sources */,
+				90792AC5CFB92F09B8BFFD57855E83EE /* MBFakerName.m in Sources */,
+				A5342278F79F8E7B896A973D13623B3D /* MBFakerPhoneNumber.m in Sources */,
+				B257EB3DC7F01020A9A30BB5003FB000 /* parser.c in Sources */,
+				4D9DBBE69AFEBDE537622A359E7EB0A7 /* reader.c in Sources */,
+				2800595ECF72B6E1EEB271064C1760ED /* scanner.c in Sources */,
+				079F227327C568EA9625355595DD7EC2 /* writer.c in Sources */,
+				84E0C7AF4AC4C817E88CCF0F237CF8D8 /* YAMLSerialization.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		38EDF6109F21D0E8F5D34D87935368A6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WPFaker;
-			target = 1557DFA128ED45CE997AFCE2D1D04293 /* WPFaker */;
-			targetProxy = C3BDE07F4BCA3B2F1710481725F998FC /* PBXContainerItemProxy */;
-		};
-		737E14FE85A6A13791AFD8EB02FA4AF8 /* PBXTargetDependency */ = {
+		35005D4D52DDEF0BBC36F10A7DBF49F8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WPObjectMapper;
-			target = 506B68F64792CF0A32F1F8564B46CB01 /* WPObjectMapper */;
-			targetProxy = 2EA2F6AA382932CD6AE37EEF6F9F56B2 /* PBXContainerItemProxy */;
+			target = 956E479B45B1E09D0CA57F6FA28B3DE6 /* WPObjectMapper */;
+			targetProxy = 779DEA5ECD7730C75C53C6F23FEA6158 /* PBXContainerItemProxy */;
 		};
-		940F6927F0CAEB160B054DC50C1EC0A4 /* PBXTargetDependency */ = {
+		4F50229B4292D81CDCECA255D62A314C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MBFaker;
-			target = 194A5A3C9A61468A27C9E87500AEBB73 /* MBFaker */;
-			targetProxy = A86F4FEB4298D10E8C85FFA037896306 /* PBXContainerItemProxy */;
+			target = D55631D2F7513230F0E6116198FF117A /* MBFaker */;
+			targetProxy = 562E65B08B19E50636FEB784CD41E75B /* PBXContainerItemProxy */;
 		};
-		9FABF7704A93E83C2722F6858F4BEE5B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WPObjectMapper;
-			target = 506B68F64792CF0A32F1F8564B46CB01 /* WPObjectMapper */;
-			targetProxy = 2F7A73D3EDF1DF10B693E9BE63A9A998 /* PBXContainerItemProxy */;
-		};
-		A84D273E91963717E556B31F9CC10E60 /* PBXTargetDependency */ = {
+		C02F7D0F3C8F6A43D3756DBD185D93E6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WPFaker;
-			target = 1557DFA128ED45CE997AFCE2D1D04293 /* WPFaker */;
-			targetProxy = DBE7B60ED07B242107841A64DD8D3988 /* PBXContainerItemProxy */;
+			target = 159EC8181BE753993DEB895251FA6F67 /* WPFaker */;
+			targetProxy = 1FFA951BE83ED353E71AE908880B463A /* PBXContainerItemProxy */;
 		};
-		BA1060FF6CE4FFA8CA79F71CD4EACB80 /* PBXTargetDependency */ = {
+		C31E0E7E9857C3BFC04D78DA90DAA0F8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MBFaker;
-			target = 194A5A3C9A61468A27C9E87500AEBB73 /* MBFaker */;
-			targetProxy = 2BC237709D14AA79F4CFBA3A434167F9 /* PBXContainerItemProxy */;
+			target = D55631D2F7513230F0E6116198FF117A /* MBFaker */;
+			targetProxy = 982864E1AB91684975D6C44012BE699F /* PBXContainerItemProxy */;
 		};
-		C1A9A42783E1A93171EF38DB7CD180D3 /* PBXTargetDependency */ = {
+		C8ADEE01AAE3280CF7124FC99F3F35CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WPFaker;
+			target = 159EC8181BE753993DEB895251FA6F67 /* WPFaker */;
+			targetProxy = 9F9A9B779B08A52C694EEBC2C9E11E77 /* PBXContainerItemProxy */;
+		};
+		DF72ABC11FC6E1644A807CA7EA55582A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WPObjectMapper;
+			target = 956E479B45B1E09D0CA57F6FA28B3DE6 /* WPObjectMapper */;
+			targetProxy = 3526EE26B3CA5AFC7C0E6C6E7BE1B364 /* PBXContainerItemProxy */;
+		};
+		E371D1CE296F5749DC70E55176A9795D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MBFaker;
-			target = 194A5A3C9A61468A27C9E87500AEBB73 /* MBFaker */;
-			targetProxy = E760F672FB9F8B8D68FBB7E38E4C3A06 /* PBXContainerItemProxy */;
+			target = D55631D2F7513230F0E6116198FF117A /* MBFaker */;
+			targetProxy = BDCDA40DA000F82B32192D33AD595757 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		01034B23E1B8210B284AED559F1EA0A4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0FA1E4A0339AAFB19C6A90343847289 /* MBFaker.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MBFaker/MBFaker-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MBFaker/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MBFaker/MBFaker.modulemap";
-				PRODUCT_NAME = MBFaker;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		084C13F80FEDE5E19A1E4770EFB42E76 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0FA1E4A0339AAFB19C6A90343847289 /* MBFaker.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MBFaker/MBFaker-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MBFaker/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MBFaker/MBFaker.modulemap";
-				PRODUCT_NAME = MBFaker;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		1BF7BD78D6B58A399C8632E843857F20 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BC1951EAA9492FA3DBA77BEA021D9EA9 /* WPFaker.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/WPFaker/WPFaker-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WPFaker/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/WPFaker/WPFaker.modulemap";
-				PRODUCT_NAME = WPFaker;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		24D74459760765BFB483DBD16025A527 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE97CF1E04E8B80BDEB806A2EF5F2B6F /* WPObjectMapper.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/WPObjectMapper/WPObjectMapper-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WPObjectMapper/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/WPObjectMapper/WPObjectMapper.modulemap";
-				PRODUCT_NAME = WPObjectMapper;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		2CD943D16ACC121CC5701784142A61D5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA2A09114F7EFC0B66BBE36E99614747 /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-WPObjectMapperExample-WPObjectMapperExampleTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-WPObjectMapperExample-WPObjectMapperExampleTests/Pods-WPObjectMapperExample-WPObjectMapperExampleTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_WPObjectMapperExample_WPObjectMapperExampleTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6F9224530522DD3C735EC96CF142642E /* Release */ = {
+		07488D4657FB0A78086563621D425F8A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -987,10 +879,12 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -998,6 +892,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -1006,124 +901,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		7C00667B43778A49052CC67D113C31AB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D1615447D4F7F582D3525987056AE53 /* Pods-WPObjectMapperExample.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-WPObjectMapperExample/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-WPObjectMapperExample/Pods-WPObjectMapperExample.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_WPObjectMapperExample;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B25E8722B8C59D491B2FFD7BF68F3BA3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE97CF1E04E8B80BDEB806A2EF5F2B6F /* WPObjectMapper.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/WPObjectMapper/WPObjectMapper-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WPObjectMapper/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/WPObjectMapper/WPObjectMapper.modulemap";
-				PRODUCT_NAME = WPObjectMapper;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B57951D085A1B98A97F8A1062A5E5C5B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1144,19 +921,21 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		B604EC410089AF687DFBD2721B91493D /* Debug */ = {
+		0F47C05A5D8A6CB0E2DC19D7718B5870 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2696F500591222CFF60D979C1C1E2ADF /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests.debug.xcconfig */;
+			baseConfigurationReference = BE91C142037B00564C0A6358C7B94753 /* MBFaker.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1167,28 +946,57 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-WPObjectMapperExample-WPObjectMapperExampleTests/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/MBFaker/MBFaker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBFaker/MBFaker-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-WPObjectMapperExample-WPObjectMapperExampleTests/Pods-WPObjectMapperExample-WPObjectMapperExampleTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_WPObjectMapperExample_WPObjectMapperExampleTests;
+				MODULEMAP_FILE = "Target Support Files/MBFaker/MBFaker.modulemap";
+				PRODUCT_MODULE_NAME = MBFaker;
+				PRODUCT_NAME = MBFaker;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		E56C7EB4BF8BEBE85A2B45462F862276 /* Release */ = {
+		26264EDC9AD9CF1F81227F890757A707 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BC1951EAA9492FA3DBA77BEA021D9EA9 /* WPFaker.xcconfig */;
+			baseConfigurationReference = F639ACF878C6AA60055F8D624FAF1852 /* WPObjectMapper.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WPObjectMapper/WPObjectMapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WPObjectMapper/WPObjectMapper-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WPObjectMapper/WPObjectMapper.modulemap";
+				PRODUCT_MODULE_NAME = WPObjectMapper;
+				PRODUCT_NAME = WPObjectMapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2C45A8611A0FB3182267EFFADD346D5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CADA8DDAC6DD6BA269EC2C3435288223 /* WPFaker.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1200,11 +1008,12 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/WPFaker/WPFaker-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WPFaker/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/WPFaker/WPFaker-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/WPFaker/WPFaker.modulemap";
+				PRODUCT_MODULE_NAME = WPFaker;
 				PRODUCT_NAME = WPFaker;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1216,9 +1025,43 @@
 			};
 			name = Release;
 		};
-		F276FFB6CAD3F008BF7B34E9BC8BDE55 /* Release */ = {
+		35A7909C7D96F3F8729135C9F2B2F78A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 40178092720974AE172440007A9568AA /* Pods-WPObjectMapperExample.release.xcconfig */;
+			baseConfigurationReference = 25FD7D1127C32B2EE5977201CF23B18F /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WPObjectMapperExample-WPObjectMapperExampleTests/Pods-WPObjectMapperExample-WPObjectMapperExampleTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WPObjectMapperExample-WPObjectMapperExampleTests/Pods-WPObjectMapperExample-WPObjectMapperExampleTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4BB61A3C73AC9F3FD3D8FD71A4DC0C93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F639ACF878C6AA60055F8D624FAF1852 /* WPObjectMapper.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1229,7 +1072,192 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-WPObjectMapperExample/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/WPObjectMapper/WPObjectMapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WPObjectMapper/WPObjectMapper-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WPObjectMapper/WPObjectMapper.modulemap";
+				PRODUCT_MODULE_NAME = WPObjectMapper;
+				PRODUCT_NAME = WPObjectMapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		61760392264075E1F66CE7533D8B2DA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE91C142037B00564C0A6358C7B94753 /* MBFaker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MBFaker/MBFaker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBFaker/MBFaker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MBFaker/MBFaker.modulemap";
+				PRODUCT_MODULE_NAME = MBFaker;
+				PRODUCT_NAME = MBFaker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		88B53BD26EFC14BF607803C9865DA593 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CADA8DDAC6DD6BA269EC2C3435288223 /* WPFaker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WPFaker/WPFaker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WPFaker/WPFaker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WPFaker/WPFaker.modulemap";
+				PRODUCT_MODULE_NAME = WPFaker;
+				PRODUCT_NAME = WPFaker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DE495E0D7091D0A2234F8BB28C6AF41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E87FEA13E4A2D745F72D0ED0172B320 /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WPObjectMapperExample-WPObjectMapperExampleTests/Pods-WPObjectMapperExample-WPObjectMapperExampleTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WPObjectMapperExample-WPObjectMapperExampleTests/Pods-WPObjectMapperExample-WPObjectMapperExampleTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A1962E6FF39BBAC201A2E5DDF99557DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D2541649FCCAB861E8B5C528AFA4A4AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 317CCA19CAFEA722EA38C76EE04B588F /* Pods-WPObjectMapperExample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WPObjectMapperExample/Pods-WPObjectMapperExample-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1239,7 +1267,7 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_WPObjectMapperExample;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1249,64 +1277,97 @@
 			};
 			name = Release;
 		};
+		D527741EFFB8D1BF51E5F512A892B21C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B758AAF1E7ED4BC60EF9B1F09A2609B7 /* Pods-WPObjectMapperExample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WPObjectMapperExample/Pods-WPObjectMapperExample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WPObjectMapperExample/Pods-WPObjectMapperExample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		079B04CA3C4CDD858E525977F105241B /* Build configuration list for PBXNativeTarget "MBFaker" */ = {
+		09D54D3C9B11D6736D8B0E16CAE3C4F2 /* Build configuration list for PBXNativeTarget "WPFaker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				01034B23E1B8210B284AED559F1EA0A4 /* Debug */,
-				084C13F80FEDE5E19A1E4770EFB42E76 /* Release */,
+				88B53BD26EFC14BF607803C9865DA593 /* Debug */,
+				2C45A8611A0FB3182267EFFADD346D5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		32CE208A42613222FFDBD06D576DD455 /* Build configuration list for PBXNativeTarget "WPObjectMapper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B57951D085A1B98A97F8A1062A5E5C5B /* Debug */,
-				6F9224530522DD3C735EC96CF142642E /* Release */,
+				4BB61A3C73AC9F3FD3D8FD71A4DC0C93 /* Debug */,
+				26264EDC9AD9CF1F81227F890757A707 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8B7701084A499271755A99E372CF0E8D /* Build configuration list for PBXNativeTarget "WPObjectMapper" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				24D74459760765BFB483DBD16025A527 /* Debug */,
-				B25E8722B8C59D491B2FFD7BF68F3BA3 /* Release */,
+				07488D4657FB0A78086563621D425F8A /* Debug */,
+				A1962E6FF39BBAC201A2E5DDF99557DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8C88518CF71E07A8C908BDCE5083E00F /* Build configuration list for PBXNativeTarget "Pods-WPObjectMapperExample-WPObjectMapperExampleTests" */ = {
+		5186E64F3107B3A31BB56BCA1DC23511 /* Build configuration list for PBXNativeTarget "Pods-WPObjectMapperExample-WPObjectMapperExampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B604EC410089AF687DFBD2721B91493D /* Debug */,
-				2CD943D16ACC121CC5701784142A61D5 /* Release */,
+				8DE495E0D7091D0A2234F8BB28C6AF41 /* Debug */,
+				35A7909C7D96F3F8729135C9F2B2F78A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8D09AD7C39E226937C6CF55682A0D414 /* Build configuration list for PBXNativeTarget "WPFaker" */ = {
+		BFDA8BE6590D9FD13998FE35C327ED32 /* Build configuration list for PBXNativeTarget "Pods-WPObjectMapperExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1BF7BD78D6B58A399C8632E843857F20 /* Debug */,
-				E56C7EB4BF8BEBE85A2B45462F862276 /* Release */,
+				D527741EFFB8D1BF51E5F512A892B21C /* Debug */,
+				D2541649FCCAB861E8B5C528AFA4A4AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DF2F771121DB2E2F48B49D5CEC52DDA9 /* Build configuration list for PBXNativeTarget "Pods-WPObjectMapperExample" */ = {
+		CA546B8583996AAE3B726BF07FEBF4CA /* Build configuration list for PBXNativeTarget "MBFaker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7C00667B43778A49052CC67D113C31AB /* Debug */,
-				F276FFB6CAD3F008BF7B34E9BC8BDE55 /* Release */,
+				0F47C05A5D8A6CB0E2DC19D7718B5870 /* Debug */,
+				61760392264075E1F66CE7533D8B2DA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }

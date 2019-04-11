@@ -26,9 +26,6 @@
 
 #pragma mark - Are Objects Equal Method
 - (BOOL)testObject:(id)testObj isEqualToDeserializedObject:(id)deserializedObj forType:(CAPSDataType)type {
-    // Set Up
-    BOOL isEqual;
-    
     // Test for one's nilness and the other's non-nilness
     if ((testObj == nil && deserializedObj != nil) || (testObj != nil && deserializedObj == nil)) {
         return NO;
@@ -36,6 +33,8 @@
     
     //Test all properties
     for (NSString *propertyName in [deserializedObj propertyDictionary]) {
+        BOOL isEqual = NO;
+
         if ([propertyName isEqualToString: @"count"]) {
             continue;
         }
