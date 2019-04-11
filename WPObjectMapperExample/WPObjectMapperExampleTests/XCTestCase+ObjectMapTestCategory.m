@@ -40,9 +40,14 @@
         }
 
         //Get instance of property
+        id testPropertyInstance;
+        @try {
+            testPropertyInstance = [testObj valueForKey:propertyName];
+        } @catch (NSException *exception) {
+            continue; // not a thing
+        }
         id deserializedPropertyInstance = [deserializedObj valueForKey:propertyName];
-        id testPropertyInstance = [testObj valueForKey:propertyName];
-        
+
         // Test property equality
         if ([deserializedPropertyInstance isKindOfClass:[NSDate class]]) {
             if (deserializedPropertyInstance && testPropertyInstance) {
@@ -79,7 +84,6 @@
             //It's a complex object of some kind
             isEqual = [self testObject:[testObj valueForKey:propertyName] isEqualToDeserializedObject:deserializedPropertyInstance forType:type];
         }
-        
         
         // Return NO if the property is not equal
         if (isEqual == NO) {
