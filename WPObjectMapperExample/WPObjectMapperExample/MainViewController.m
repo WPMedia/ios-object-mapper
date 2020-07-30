@@ -1,5 +1,5 @@
 //
-//  MasterViewController.m
+//  MainViewController.m
 //  WPObjectMapperExample
 //
 //  Created by Soper, Sean on 6/25/15.
@@ -8,16 +8,17 @@
 
 #import <WPObjectMapper/NSObject+ObjectMap.h>
 
-#import "MasterViewController.h"
+#import "MainViewController.h"
 #import "DetailViewController.h"
 #import "SingleObject.h"
 
-@interface MasterViewController ()
 
+@interface MainViewController ()
 @property NSMutableArray *objects;
 @end
 
-@implementation MasterViewController
+
+@implementation MainViewController
 
 - (void)awakeFromNib {
     [super awakeFromNib];
