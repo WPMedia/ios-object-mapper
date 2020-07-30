@@ -2,7 +2,7 @@ PODS:
   - MBFaker (0.1.3)
   - WPFaker (0.0.5):
     - MBFaker (= 0.1.3)
-  - WPObjectMapper (0.0.7)
+  - WPObjectMapper (0.1.1)
 
 DEPENDENCIES:
   - WPFaker (~> 0.0.5)
@@ -20,8 +20,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   MBFaker: 4b73b5f9587b55ec30ba0a76174e9c7ab0936533
   WPFaker: 47a69a4c3b9405ee4225e5a0a4c282be39b064fc
-  WPObjectMapper: 8a65187da4a361c82b078f634aa4d2e7726733c8
+  WPObjectMapper: d46f8dda77cdc6f1d36051da6709f98d298cb572
 
 PODFILE CHECKSUM: 2e57f9e22e493dfa67dfe34a89093a31ace73fd3
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.9.3
