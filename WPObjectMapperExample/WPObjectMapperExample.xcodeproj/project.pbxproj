@@ -21,7 +21,7 @@
 		8DE520FC1B3DA7A1006B117D /* NSObject-AutoDescriptionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE520FB1B3DA7A1006B117D /* NSObject-AutoDescriptionTests.m */; };
 		D80384D31B3C5C7300EF9A19 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D80384D21B3C5C7300EF9A19 /* main.m */; };
 		D80384D61B3C5C7300EF9A19 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D80384D51B3C5C7300EF9A19 /* AppDelegate.m */; };
-		D80384D91B3C5C7300EF9A19 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D80384D81B3C5C7300EF9A19 /* MasterViewController.m */; };
+		D80384D91B3C5C7300EF9A19 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D80384D81B3C5C7300EF9A19 /* MainViewController.m */; };
 		D80384DC1B3C5C7300EF9A19 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D80384DB1B3C5C7300EF9A19 /* DetailViewController.m */; };
 		D80384DF1B3C5C7300EF9A19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D80384DD1B3C5C7300EF9A19 /* Main.storyboard */; };
 		D80384E11B3C5C7300EF9A19 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D80384E01B3C5C7300EF9A19 /* Images.xcassets */; };
@@ -66,8 +66,8 @@
 		D80384D21B3C5C7300EF9A19 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D80384D41B3C5C7300EF9A19 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D80384D51B3C5C7300EF9A19 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D80384D71B3C5C7300EF9A19 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		D80384D81B3C5C7300EF9A19 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		D80384D71B3C5C7300EF9A19 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		D80384D81B3C5C7300EF9A19 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		D80384DA1B3C5C7300EF9A19 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		D80384DB1B3C5C7300EF9A19 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		D80384DE1B3C5C7300EF9A19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -164,8 +164,8 @@
 				8D89944C1B3D8A9400C3D822 /* Helpers */,
 				D80384D41B3C5C7300EF9A19 /* AppDelegate.h */,
 				D80384D51B3C5C7300EF9A19 /* AppDelegate.m */,
-				D80384D71B3C5C7300EF9A19 /* MasterViewController.h */,
-				D80384D81B3C5C7300EF9A19 /* MasterViewController.m */,
+				D80384D71B3C5C7300EF9A19 /* MainViewController.h */,
+				D80384D81B3C5C7300EF9A19 /* MainViewController.m */,
 				D80384DA1B3C5C7300EF9A19 /* DetailViewController.h */,
 				D80384DB1B3C5C7300EF9A19 /* DetailViewController.m */,
 				D80384DD1B3C5C7300EF9A19 /* Main.storyboard */,
@@ -285,6 +285,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -410,7 +411,7 @@
 				D80384D61B3C5C7300EF9A19 /* AppDelegate.m in Sources */,
 				8D8994591B3D8A9400C3D822 /* ObjectWithSingleObjectsArray.m in Sources */,
 				8D89945B1B3D8A9400C3D822 /* SingleObject.m in Sources */,
-				D80384D91B3C5C7300EF9A19 /* MasterViewController.m in Sources */,
+				D80384D91B3C5C7300EF9A19 /* MainViewController.m in Sources */,
 				8D8994571B3D8A9400C3D822 /* ObjectWithNestedObjectsArray.m in Sources */,
 				D80384D31B3C5C7300EF9A19 /* main.m in Sources */,
 				8D8994551B3D8A9400C3D822 /* NestedObject.m in Sources */,
