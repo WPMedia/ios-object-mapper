@@ -1,5 +1,5 @@
 //
-//  MasterViewController.h
+//  MainViewController.h
 //  WPObjectMapperExample
 //
 //  Created by Soper, Sean on 6/25/15.
@@ -10,10 +10,9 @@
 
 @class DetailViewController;
 
-@interface MasterViewController : UITableViewController
+
+@interface MainViewController : UITableViewController
 
 @property (strong, nonatomic) DetailViewController *detailViewController;
 
-
 @end
-
