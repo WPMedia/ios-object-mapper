@@ -18,10 +18,6 @@
 #import "MBFakerLorem.h"
 #import "MBFakerName.h"
 #import "MBFakerPhoneNumber.h"
-#import "config.h"
-#import "yaml.h"
-#import "yaml_private.h"
-#import "YAMLSerialization.h"
 
 FOUNDATION_EXPORT double MBFakerVersionNumber;
 FOUNDATION_EXPORT const unsigned char MBFakerVersionString[];

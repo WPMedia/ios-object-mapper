@@ -19,7 +19,7 @@
 }
 
 - (NSString *) minutesAgo:(NSUInteger) minutes
-                  options:(NSUInteger) options {
+                  options:(TestDatesFormat) options {
   return [self minutesAgo: minutes format: [self formatFromOptions: options]];
 }
 
@@ -29,7 +29,7 @@
 }
 
 - (NSDate *) dateFromString:(NSString *) dateStr
-                    options:(NSUInteger) options {
+                    options:(TestDatesFormat) options {
   NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
   [dateFormat setDateFormat: [self formatFromOptions: options]];
 
@@ -48,7 +48,7 @@
   return [dateFormat stringFromDate: date];
 }
 
-- (NSString *) formatFromOptions:(NSUInteger) options {
+- (NSString *) formatFromOptions:(TestDatesFormat) options {
   NSString *format = @"EE, d LLL yyyy HH:mm:ss z";
   switch (options) {
     case TestDatesFormatBundle:

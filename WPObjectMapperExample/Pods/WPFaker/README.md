@@ -1,6 +1,6 @@
 # WPFaker
 
-*WBFaker* is a Post library that builds on top of [MBFaker](https://github.com/bananita/MBFaker) and adds a handful of additional methods that are helpful for our apps.
+*WPFaker* is a Post library that builds on top of [MBFaker](https://github.com/bananita/MBFaker) and adds a handful of additional methods that are helpful for our apps.
 
 It was originally created as a result of [IPADRAIN-165](http://jira.wpprivate.com/browse/IPADRAIN-165).
 
