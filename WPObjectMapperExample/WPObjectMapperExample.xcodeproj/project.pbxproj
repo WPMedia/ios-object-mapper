@@ -110,7 +110,6 @@
 				2EF2D0C996D662FA2DFBB121 /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests.debug.xcconfig */,
 				02135CF43EA0E11E8D8E84F3 /* Pods-WPObjectMapperExample-WPObjectMapperExampleTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -283,10 +282,9 @@
 			};
 			buildConfigurationList = D80384C81B3C5C7300EF9A19 /* Build configuration list for PBXProject "WPObjectMapperExample" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
