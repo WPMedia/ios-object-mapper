@@ -1,6 +1,6 @@
 {
   "name": "WPObjectMapper",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "summary": "This is a drop-in category of NSObject that makes it easy to initialize custom objects from JSON or XML.",
   "description": "This was originally sourced from the NSObject-ObjectMap category. Used mostly in PostKit for ingestion of content.",
   "homepage": "https://github.com/WPMedia/ios-object-mapper",
@@ -16,7 +16,7 @@
   },
   "source": {
     "git": "git@github.com:WPMedia/ios-object-mapper.git",
-    "tag": "0.1.1"
+    "tag": "0.1.2"
   },
   "source_files": "WPObjectMapper"
 }

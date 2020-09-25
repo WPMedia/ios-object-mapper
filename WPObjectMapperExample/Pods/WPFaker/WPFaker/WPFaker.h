@@ -47,4 +47,15 @@
  */
 + (NSString *) uuid;
 
+/**
+ *  Generates a random, valid adSetUrl string.
+ *
+ *  Examples:
+ *
+ *      "http://ad.doubleclick.net/N701/pfadx/wpni.video.abcde/postsportslive_apps;frmt=2;frmt=1;frmt=0;vid=15;vid=30;sz=640x480;ord=[TIMESTAMP]"
+ *
+ *  @return A fake adSetUrl.
+ */
++ (NSString *) adSetUrl;
+
 @end

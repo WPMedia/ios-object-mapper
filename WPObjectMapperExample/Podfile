@@ -8,10 +8,10 @@ platform :ios, '9.0'
 
 target 'WPObjectMapperExample' do
   pod 'WPObjectMapper', :inhibit_warnings => false, :path => '..'
-  pod 'WPFaker', '~> 0.0.5'
+  pod 'WPFaker', '~> 0.2.0'
 
   target 'WPObjectMapperExampleTests' do
-    pod 'WPFaker', '~> 0.0.5'
+    pod 'WPFaker', '~> 0.2.0'
   end
 end
 

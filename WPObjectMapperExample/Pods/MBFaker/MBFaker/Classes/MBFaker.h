@@ -6,7 +6,8 @@
 //  Copyright (c) 2012 Michał Banasiak. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
+
 #import "MBFakerHelper.h"
 #import "MBFakerName.h"
 #import "MBFakerLorem.h"

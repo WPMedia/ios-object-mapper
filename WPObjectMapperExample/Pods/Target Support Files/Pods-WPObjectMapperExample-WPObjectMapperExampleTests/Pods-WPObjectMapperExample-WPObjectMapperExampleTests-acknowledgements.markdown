@@ -26,7 +26,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## WPFaker
 
-© 2014 The Washington Post. All rights reserved.
+© 2015 The Washington Post. All rights reserved.
 
 
 ## WPObjectMapper

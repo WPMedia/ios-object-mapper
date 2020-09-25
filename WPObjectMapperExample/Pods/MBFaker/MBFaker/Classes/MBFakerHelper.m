@@ -7,30 +7,50 @@
 //
 
 #import "MBFakerHelper.h"
-#import "YAMLSerialization.h"
-
 
 @implementation MBFakerHelper
+
++ (NSBundle *) bundle {
+    static NSBundle *bundle;
+    static dispatch_once_t onceToken;
+
+    dispatch_once (&onceToken, ^{
+        NSURL *bundleURL = [[NSBundle mainBundle].resourceURL URLByAppendingPathComponent: @"Frameworks/MBFaker.framework/MBFaker.bundle"];
+
+        // Backwards compatibility for those projects that don't use `use_frameworks!`
+        if (![bundleURL checkResourceIsReachableAndReturnError: nil]) {
+            bundleURL = [[NSBundle mainBundle].resourceURL URLByAppendingPathComponent: @"MBFaker.bundle"];
+        }
+
+        // When using as part of a test, we need to check elsewhere
+        if (![bundleURL checkResourceIsReachableAndReturnError: nil]) {
+            bundleURL = [[NSBundle bundleForClass: [self class]].resourceURL URLByAppendingPathComponent: @"MBFaker.bundle"];
+        }
+
+        bundle = [NSBundle bundleWithURL: bundleURL];
+    });
+
+    return bundle;
+}
 
 + (NSDictionary*)translations {
     NSMutableDictionary* translationsDictionary = [[NSMutableDictionary alloc] init];
     
-    NSArray* translationPaths = [[NSBundle bundleForClass:[self class]] pathsForResourcesOfType:@"yml" inDirectory:@""];
+    NSArray *translationPaths = [self.bundle pathsForResourcesOfType:@"json" inDirectory:@"Locales"];
     
     for (NSString* path in translationPaths) {
-        NSInputStream *stream = [[NSInputStream alloc] initWithFileAtPath: path];
-        
-        NSMutableArray* yaml = [YAMLSerialization YAMLWithStream: stream
-                                                         options: kYAMLReadOptionStringScalars
-                                                           error: NULL];
-        
-        NSDictionary* dictionary = (NSDictionary*)[yaml objectAtIndex:0];
-        
-        NSString* key = [[dictionary allKeys] objectAtIndex:0];
-        
-        [translationsDictionary setObject: [dictionary objectForKey:key] forKey:key];
+        NSData *data = [NSData dataWithContentsOfFile: path];
+        NSError *error;
+        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData: data options: 0 error: &error];
+        if (!dict) {
+            NSLog(@"Error reading JSON file %@, %@", path, error);
+            continue;
+        }
+
+        NSString* key = [[dict allKeys] objectAtIndex:0];
+        [translationsDictionary setObject: [dict objectForKey:key] forKey:key];
     }
-    
+
     return (NSDictionary*)translationsDictionary;
 }
 

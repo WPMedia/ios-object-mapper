@@ -7,7 +7,6 @@
 //
 
 #import "WPFaker.h"
-#import "YAMLSerialization.h"
 
 @implementation MBFakerInternet (WP)
 
@@ -26,6 +25,23 @@
     CFRelease(uuid);
     
     return uuidString;
+}
+
++ (NSString *) adSetUrl {
+
+    const int strLength = 4 + arc4random() % 5;
+    const NSString *letters = @"abcdefghijklmnopqrstuvwxyz";
+
+    NSMutableString *randomString = [NSMutableString stringWithCapacity: strLength];
+
+    for (int i = 0; i < strLength; i++) {
+        [randomString appendFormat: @"%C", [letters characterAtIndex: arc4random() % [letters length]]];
+    }
+
+    NSString *urlString = @"http://ad.doubleclick.net/N701/pfadx/wpni.video.%@/postsportslive_apps;frmt=2;frmt=1;frmt=0;vid=15;vid=30;sz=640x480;ord=[TIMESTAMP]";
+    urlString = [urlString stringByReplacingOccurrencesOfString:@"%@" withString:randomString];
+
+    return urlString;
 }
 
 @end
